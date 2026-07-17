@@ -6,7 +6,7 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Promotions Comments Panel</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:none;height:calc(100vh - 2rem);margin:0;border:0}</style>
 </head>
 <body>
 <iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Promotions Comments Panel" srcdoc="&lt;!doctype html&gt;
@@ -820,6 +820,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       display: grid;
       gap: 20px;
       min-width: 0;
+      width: 100%;
     }
     #promotions-all-mechanics * { box-sizing: border-box; }
     #promotions-all-mechanics .pam-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -846,14 +847,14 @@ html&gt;body{padding:0}&lt;/style&gt;
       align-items: start;
       display: grid;
       gap: 24px;
-      grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+      grid-template-columns: minmax(0, 1fr);
       min-width: 0;
     }
     #promotions-all-mechanics .pam-main &gt; .pam-section + .pam-section {
-      border-left: 1px solid var(--border);
-      border-top: 0;
-      padding-left: 20px;
-      padding-top: 0;
+      border-left: 0;
+      border-top: 1px solid var(--border);
+      padding-left: 0;
+      padding-top: 20px;
     }
     #promotions-all-mechanics .pam-detail-grid {
       display: grid;
@@ -934,20 +935,23 @@ html&gt;body{padding:0}&lt;/style&gt;
       gap: 10px;
     }
     #promotions-all-mechanics [hidden] { display: none !important; }
+    @media (min-width: 1360px) {
+      #promotions-all-mechanics .pam-main {
+        gap: 32px;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      }
+      #promotions-all-mechanics .pam-main &gt; .pam-section + .pam-section {
+        border-left: 1px solid var(--border);
+        border-top: 0;
+        padding-left: 28px;
+        padding-top: 0;
+      }
+    }
     @media (max-width: 620px) {
       #promotions-all-mechanics .pam-stats { grid-template-columns: 1fr; }
       #promotions-all-mechanics .pam-detail-grid { grid-template-columns: 1fr; }
       #promotions-all-mechanics .pam-calc { grid-template-columns: 1fr; }
       #promotions-all-mechanics .pam-op { padding: 2px 0; }
-    }
-    @media (max-width: 620px) {
-      #promotions-all-mechanics .pam-main { grid-template-columns: 1fr; }
-      #promotions-all-mechanics .pam-main &gt; .pam-section + .pam-section {
-        border-left: 0;
-        border-top: 1px solid var(--border);
-        padding-left: 0;
-        padding-top: 20px;
-      }
     }
   &lt;/style&gt;
 
