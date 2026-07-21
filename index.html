@@ -37,7 +37,7 @@
     .bugs-top{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.bug-kpi{padding:23px}.bug-kpi strong{display:block;font-size:34px;letter-spacing:-.04em}.bug-kpi span{font-size:12px;color:var(--muted)}.bug-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}.bug{padding:26px;position:relative;overflow:hidden}.bug-num{position:absolute;right:20px;top:10px;font-size:72px;font-weight:900;color:#eef2fa;line-height:1}.bug .pill{display:inline-block;position:relative}.bug h3{position:relative;margin:18px 0 10px;font-size:22px}.bug p{position:relative;margin:0;color:var(--muted)}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:18px;padding:28px}.flow-step{position:relative;padding:20px 28px 20px 20px;border-right:1px dashed #cbd3e2}.flow-step:last-child{border:0}.flow-step:after{content:"→";position:absolute;right:-12px;top:34px;width:24px;height:24px;border-radius:50%;background:white;color:var(--blue);font-weight:900;text-align:center}.flow-step:last-child:after{display:none}.flow-step strong{display:block;font-size:16px;margin-bottom:7px}.flow-step span{font-size:12px;color:var(--muted)}
     .drawer-back{position:fixed;inset:0;background:rgba(9,16,35,.35);backdrop-filter:blur(3px);z-index:60;opacity:0;pointer-events:none;transition:.3s}.drawer-back.open{opacity:1;pointer-events:auto}.drawer{position:absolute;right:0;top:0;height:100%;width:min(560px,94vw);background:white;padding:32px;transform:translateX(100%);transition:.38s cubic-bezier(.22,.9,.25,1);overflow:auto}.drawer-back.open .drawer{transform:none}.close{border:0;background:#f0f3f8;width:40px;height:40px;border-radius:12px;cursor:pointer;font-size:22px}.drawer h2{font-size:36px;letter-spacing:-.04em;margin:35px 0 8px}.drawer-kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0}.drawer-kpi{padding:17px;border-radius:15px;background:#f6f8fb}.drawer-kpi span{font-size:11px;color:var(--muted);display:block}.drawer-kpi strong{font-size:22px}.drawer-block{padding:18px 0;border-top:1px solid var(--line)}.drawer-block h4{margin:0 0 7px}.drawer-block p{margin:0;color:var(--muted)}
     .source{margin:32px 4px 0;padding-top:20px;border-top:1px solid #dde2eb;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#7d8799}.reveal{opacity:0;transform:translateY(14px);transition:.65s}.reveal.visible{opacity:1;transform:none}
-    .tree-actions-table{display:grid;gap:6px;min-width:850px}.action-header,.action-node{display:grid;grid-template-columns:minmax(170px,1.45fr) 82px 130px 130px 115px;gap:12px;align-items:center}.action-header{padding:0 14px 7px;color:#7c879a;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.055em}.action-header span:not(:first-child){text-align:right}.action-node{width:100%;min-height:0;border-radius:13px;padding:12px 14px}.action-node:hover,.action-node.active{transform:translateX(3px)}.action-node strong{font-size:13px}.action-node span{display:block;text-align:right;font-size:13px;font-weight:740;font-variant-numeric:tabular-nums;margin:0}.action-node .action-count{font-size:18px;font-weight:840}.effect-head,.effect-row{display:grid;grid-template-columns:210px 1fr 120px 100px;gap:16px;align-items:center}.effect-head{padding:0 0 11px;border-bottom:1px solid #dfe4ec;color:#7c879a;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.effect-head span:nth-child(n+3){text-align:right}.initiative-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.summary-card{padding:24px}.summary-card span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2b5cbc;font-weight:800}.summary-card h3{margin:11px 0 8px;font-size:21px}.summary-card p{margin:0;color:var(--muted);font-size:13px}.flow{grid-template-columns:repeat(5,1fr)}.initiatives{margin-top:18px;padding:25px;overflow:auto}.initiative-table{width:100%;min-width:980px;border-collapse:separate;border-spacing:0 7px}.initiative-table th{text-align:left;padding:7px 12px;color:#7c879a;font-size:10px;text-transform:uppercase;letter-spacing:.06em}.initiative-table td{padding:14px 12px;background:#f7f8fb;vertical-align:top;font-size:13px}.initiative-table td:first-child{border-radius:11px 0 0 11px;width:74px}.initiative-table td:last-child{border-radius:0 11px 11px 0}.priority{display:inline-flex;padding:5px 8px;border-radius:8px;background:#e9efff;color:#2451b2;font-weight:850;font-size:11px}.initiative-table strong{display:block;margin-bottom:3px}.initiative-table small{color:var(--muted)}
+    .tree-actions-table{display:grid;gap:6px;min-width:850px}.action-header,.action-node{display:grid;grid-template-columns:minmax(145px,.8fr) 82px 110px minmax(300px,2fr);gap:12px;align-items:center}.action-header{padding:0 14px 7px;color:#7c879a;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.055em}.action-header span:not(:first-child){text-align:right}.action-header span:last-child{text-align:left}.action-node{width:100%;min-height:0;border-radius:13px;padding:12px 14px}.action-node:hover,.action-node.active{transform:translateX(3px)}.action-node strong{font-size:13px}.action-node span{display:block;text-align:right;font-size:13px;font-weight:740;font-variant-numeric:tabular-nums;margin:0}.action-node .action-count{font-size:18px;font-weight:840}.action-node .action-reason{text-align:left;font-weight:500;color:#667085;font-variant-numeric:normal;line-height:1.35}.effect-head,.effect-row{display:grid;grid-template-columns:210px 1fr 120px 100px;gap:16px;align-items:center}.effect-head{padding:0 0 11px;border-bottom:1px solid #dfe4ec;color:#7c879a;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.effect-head span:nth-child(n+3){text-align:right}.initiative-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.summary-card{padding:24px}.summary-card span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2b5cbc;font-weight:800}.summary-card h3{margin:11px 0 8px;font-size:21px}.summary-card p{margin:0;color:var(--muted);font-size:13px}.flow{grid-template-columns:repeat(5,1fr)}.initiatives{margin-top:18px;padding:25px;overflow:auto}.initiative-table{width:100%;min-width:980px;border-collapse:separate;border-spacing:0 7px}.initiative-table th{text-align:left;padding:7px 12px;color:#7c879a;font-size:10px;text-transform:uppercase;letter-spacing:.06em}.initiative-table td{padding:14px 12px;background:#f7f8fb;vertical-align:top;font-size:13px}.initiative-table td:first-child{border-radius:11px 0 0 11px;width:74px}.initiative-table td:last-child{border-radius:0 11px 11px 0}.priority{display:inline-flex;padding:5px 8px;border-radius:8px;background:#e9efff;color:#2451b2;font-weight:850;font-size:11px}.initiative-table strong{display:block;margin-bottom:3px}.initiative-table small{color:var(--muted)}
     @keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes draw{to{stroke-dashoffset:0}}@keyframes appear{to{opacity:1}}@keyframes rise{from{transform:translateY(100%)}to{transform:none}}@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(103,232,189,0)}}@keyframes float{50%{transform:translateY(22px) scale(1.06)}}
     @media(max-width:1100px){.hero-grid,.tree-layout,.chart-grid,.effect-hero{grid-template-columns:1fr}.bugs-top{grid-template-columns:repeat(2,1fr)}.tree-stage{min-height:auto}.tree{grid-template-columns:1fr 45px 1fr 45px 1fr}.tree-actions-grid{grid-template-columns:repeat(3,1fr)}.detail{min-height:360px}.hero{padding:48px}.hero-kpis{grid-template-columns:repeat(3,1fr)}.hero-kpi.wide{grid-column:auto}.effect-row{grid-template-columns:180px 1fr 105px}.effect-row .content{display:none}}
     @media(max-width:720px){.shell{width:min(100% - 20px,1500px)}.topbar{padding:9px 10px}.brand span,.stamp{display:none}.nav button{padding:9px 11px;font-size:12px}.hero{padding:34px 24px;min-height:auto}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-grid{gap:32px}.hero-kpis{grid-template-columns:1fr 1fr}.hero-kpi.wide{grid-column:1/-1}.tree-wrap{padding:16px}.tree-stage{padding:16px;overflow:auto}.tree{min-width:820px}.tree-actions{min-width:820px}.tree-actions-grid{grid-template-columns:repeat(4,1fr)}.bug-grid,.bugs-top{grid-template-columns:1fr}.revenue-strip{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr}.flow-step{border-right:0;border-bottom:1px dashed #cbd3e2}.flow-step:after{display:none}.effect-row{grid-template-columns:130px 1fr 90px}.section-head{align-items:start;flex-direction:column}.source{flex-direction:column}}
@@ -63,36 +63,36 @@
       <div class="hero-grid">
         <div>
           <span class="eyebrow">Тарифный контур и акции</span>
-          <h1>15% тарифов ручные. 38% требуют ручных операций</h1>
-          <p>Единое дерево RRE SS&Sub: от типа тарифа — к ручному тегу, конкретной акции, её бизнес-цели и пути автоматизации.</p>
-          <div class="hero-note"><i class="pulse"></i>Ручной тариф и ручной тег показаны отдельно — клиент не становится custom-тарифом только из-за «ППС manual»</div>
+          <h1>Ручной контур — это не только custom-тариф</h1>
+          <p>Единое дерево RRE SS&Sub: от всего тарифного контура — к ручному тарифу, «ППС manual» и конкретным акциям.</p>
+          <div class="hero-note"><i class="pulse"></i>Ручной контур = ручной тариф или активный «ППС manual»; пересечение клиентов считаем один раз</div>
         </div>
         <div class="hero-kpis">
           <article class="hero-kpi"><span class="k-label">Активны 30 июня</span><div class="k-value count" data-value="6475">0</div><span class="k-sub">все тарифы SS&Sub</span></article>
           <article class="hero-kpi"><span class="k-label">Ручные тарифы</span><div class="k-value accent">15,38%</div><span class="k-sub">996 клиентов · tariff_custom</span></article>
-          <article class="hero-kpi wide"><span class="k-label">Тарифы с ручными операциями</span><div class="k-value accent">37,61% <small style="font-size:16px">≈ 38%</small></div><span class="k-sub">2 435 клиентов: ручной тариф или любой активный ручной тег</span></article>
+          <article class="hero-kpi wide"><span class="k-label">Весь ручной контур</span><div class="k-value accent">34,87%</div><span class="k-sub">2 258 клиентов: ручной тариф или «ППС manual», без двойного счёта</span></article>
         </div>
       </div>
     </section>
 
     <section id="map" class="tab active">
       <div class="section reveal">
-        <div class="section-head"><div><h2>Дерево тарифов и ручных операций</h2><p>Нажимайте на ветки: дерево провалится от всего контура к типу ручника, затем к акциям. Описание выбранного узла всегда остаётся справа.</p></div><span class="pill">30 июня 2026</span></div>
+        <div class="section-head"><div><h2>Дерево ручного контура</h2><p>Нажимайте на ветки: от всех тарифов — к ручному тарифу или «ППС manual», затем к активным акциям внутри ручных тарифов.</p></div><span class="pill">30 июня 2026</span></div>
         <div class="tree-wrap card">
-          <div class="tree-top"><h3>От всех тарифов — к операции — к акции</h3><div class="legend"><span><i class="dot blue"></i>есть ручная операция</span><span><i class="dot mint"></i>полностью автоматически</span></div></div>
+          <div class="tree-top"><h3>От всех тарифов — к ручному контуру — к механике</h3><div class="legend"><span><i class="dot blue"></i>ручной контур</span><span><i class="dot mint"></i>без ручных признаков</span></div></div>
           <div class="tree-layout">
             <div class="tree-stage">
               <div class="tree">
                 <div><button class="node root active" data-node="all"><span class="n-title">Все активные тарифы</span><span class="n-value">6 475</span><small>100% · 30.06</small></button></div>
                 <div class="connector"></div>
                 <div class="branch-col">
-                  <button class="node manual" data-node="operations"><span class="n-title">С ручными операциями</span><span class="n-value">2 435</span><small>37,61% ≈ 38%</small></button>
-                  <button class="node auto" data-node="automatic"><span class="n-title">Полностью автоматически</span><span class="n-value">4 040</span><small>62,39%</small></button>
+                  <button class="node manual" data-node="manual"><span class="n-title">Ручной контур</span><span class="n-value">2 258</span><small>34,87%</small></button>
+                  <button class="node auto" data-node="automatic"><span class="n-title">Без ручных признаков</span><span class="n-value">4 217</span><small>65,13%</small></button>
                 </div>
                 <div class="connector"></div>
                 <div class="branch-col">
                   <button class="node tiny" data-node="manual-tariff"><span class="n-title">Ручной тариф</span><span class="n-value">996</span><small>15,38% от всех · tariff_custom</small></button>
-                  <button class="node tiny" data-node="manual-tag"><span class="n-title">Ручной тег на standard</span><span class="n-value">1 439</span><small>22,22% · тариф остаётся стандартным</small></button>
+                  <button class="node tiny" data-node="manual-tag"><span class="n-title">ППС manual на standard</span><span class="n-value">1 262</span><small>19,49% · тариф остаётся стандартным</small></button>
                 </div>
               </div>
               <div class="tree-actions" id="treeActions"></div>
@@ -101,77 +101,90 @@
           </div>
         </div>
       </div>
+      <div class="section reveal">
+        <div class="section-head"><div><h2>Что ещё нужно доработать</h2><p>Три продуктовых сценария, без которых часть клиентских условий продолжит собираться вручную.</p></div><span class="pill">следующий контур развития</span></div>
+        <div class="initiative-summary">
+          <article class="summary-card card"><span>Непролонг</span><h3>Возврат через штраф</h3><p>Если клиент не продлил условия, система должна сама рассчитать последствие и вернуть его в стандартный сценарий без ручной корректировки.</p></article>
+          <article class="summary-card card"><span>Гибкая цена</span><h3>Скидка на отдельную категорию</h3><p>Дать скидку только на выбранную категорию, не меняя условия всего тарифа клиента.</p></article>
+          <article class="summary-card card"><span>Совместимость</span><h3>Гибкий движок применения акций</h3><p>Заранее понимать, какие акции можно сочетать, в каком порядке их применять и какая из них важнее при конфликте.</p></article>
+        </div>
+      </div>
     </section>
 
     <section id="dynamics" class="tab">
       <div class="section">
-        <div class="section-head"><div><h2>Динамика ручных операций</h2><p>Ручной тариф или любой активный ручной тег. Это тот же показатель, который на конец июня равен 37,61%.</p></div><span class="pill">month-end snapshot</span></div>
+        <div class="section-head"><div><h2>Динамика ручного контура</h2><p>Ручной тариф или активный «ППС manual», без двойного счёта клиентов.</p></div><span class="pill">month-end snapshot</span></div>
         <div class="chart-grid">
           <article class="chart-card card">
-            <div class="chart-title"><div><h3>С ручными операциями / полностью auto</h3><p>доля среди всех активных клиентов</p></div><div class="big-delta">−10,96 п.п.</div></div>
+            <div class="chart-title"><div><h3>Ручной контур / без ручных признаков</h3><p>доля среди всех активных клиентов</p></div><div class="big-delta">−11,04 п.п.</div></div>
             <div class="stack-list" id="stackList"></div>
           </article>
           <article class="chart-card card">
-            <div class="chart-title"><div><h3>Доля тарифов с ручными операциями</h3><p>январь → июнь</p></div><span class="pill">48,57% → 37,61%</span></div>
-            <svg class="line-chart" viewBox="0 0 560 280" aria-label="Динамика доли тарифов с ручными операциями">
+            <div class="chart-title"><div><h3>Доля ручного контура</h3><p>январь → июнь</p></div><span class="pill">45,91% → 34,87%</span></div>
+            <svg class="line-chart" viewBox="0 0 560 280" aria-label="Динамика доли ручного контура">
               <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f82f4" stop-opacity=".35"/><stop offset="1" stop-color="#4f82f4" stop-opacity="0"/></linearGradient></defs>
               <g><line class="gridline" x1="48" x2="540" y1="45" y2="45"/><line class="gridline" x1="48" x2="540" y1="115" y2="115"/><line class="gridline" x1="48" x2="540" y1="185" y2="185"/><text class="axistext" x="6" y="49">50%</text><text class="axistext" x="6" y="119">40%</text><text class="axistext" x="6" y="189">30%</text></g>
-              <path class="area" d="M55 55 L150 69 L245 73 L340 95 L435 100 L530 132 L530 230 L55 230 Z"/><path class="line" d="M55 55 L150 69 L245 73 L340 95 L435 100 L530 132"/>
+              <path class="area" d="M55 74 L150 88 L245 93 L340 116 L435 121 L530 152 L530 230 L55 230 Z"/><path class="line" d="M55 74 L150 88 L245 93 L340 116 L435 121 L530 152"/>
               <g id="sharePoints"></g><g id="monthLabels"></g>
             </svg>
           </article>
         </div>
         <div class="heat-card card">
-          <div class="chart-title"><div><h3>Активные акции по месяцам</h3><p>не новые подключения, а фактически активные теги на конец месяца</p></div><span class="pill">уникальные клиенты внутри механики</span></div>
+          <div class="chart-title"><div><h3>Активные акции по месяцам</h3><p>Аналитика по активным акциям; актуальный срез — на конец июня.</p></div><span class="pill">уникальные клиенты внутри механики</span></div>
           <table class="heat"><thead><tr><th>Механика</th><th>Янв</th><th>Фев</th><th>Мар</th><th>Апр</th><th>Май</th><th>Июн</th><th>H1 unique*</th></tr></thead><tbody id="heatBody"></tbody></table>
         </div>
-        <div class="section-head"><div><h2>Тарифная выручка</h2><p>Сумма по активному тарифному контуру RRE SS&Sub за месяц.</p></div><span class="pill">+20,1% январь → июнь</span></div>
+        <div class="section-head"><div><h2>Общая тарифная выручка контура</h2><p>Выручка всех клиентов RRE SS&Sub за месяц — с акциями и без них. Это не сумма эффектов акций и её нельзя складывать с +65,97 млн ₽.</p></div><span class="pill">+20,1% январь → июнь</span></div>
         <div class="revenue-strip" id="revenueStrip"></div>
       </div>
     </section>
 
     <section id="effect" class="tab">
       <div class="section">
-        <div class="section-head"><div><h2>Наблюдаемый эффект акций</h2><p>Прирост клиента в первом полном месяце после подключения относительно месяца до подключения.</p></div><span class="pill">закрытые окна январь–май</span></div>
+        <div class="section-head"><div><h2>Частичный наблюдаемый эффект акций</h2><p>Текущий расчёт показывает только первое изменение после подключения, а не весь накопленный эффект за H1.</p></div><span class="pill">закрытые окна январь–май</span></div>
         <div class="effect-hero">
-          <article class="effect-main card"><span class="eyebrow">Net pre/post</span><div class="big">+65,97 млн ₽</div><p>Суммарное изменение выручки по закрытым окнам. Внутри есть и положительные, и отрицательные результаты — отрицательные не скрыты.</p></article>
+          <article class="effect-main card"><span class="eyebrow">Частичный net pre/post</span><div class="big">+65,97 млн ₽</div><p>Выручка в первом полном месяце после подключения минус выручка клиента в месяце до подключения. Это не полный эффект H1.</p></article>
           <div class="effect-side"><article class="mini card"><span class="k-label">Прирост контента</span><strong>+5 281</strong><small>месяц после против месяца до</small></article><article class="mini card"><span class="k-label">Положительный результат</span><strong>68,3%</strong><small>4 208 из 6 161 наблюдений</small></article></div>
         </div>
+        <div class="initiative-summary">
+          <article class="summary-card card"><span>Как считается сейчас</span><h3>Месяц после − месяц до</h3><p>Для подключения акции в январе–мае берём всю тарифную выручку клиента в первом полном месяце после входа и вычитаем всю его выручку в месяце до входа.</p></article>
+          <article class="summary-card card"><span>Что не попало</span><h3>Продления и старые акции</h3><p>Не учтён дальнейший рост при втором и следующих продлениях. Акции, подключённые в 2025 году и продолжавшие работать в H1, в этой сумме тоже отсутствуют.</p></article>
+          <article class="summary-card card"><span>Как нужен полный расчёт</span><h3>Накопленный эффект H1</h3><p>Считать каждый месяц действия акции, включая продления и старые подключения, и вычитать динамику похожих клиентов без акции.</p></article>
+        </div>
         <div class="effect-list card"><div class="effect-head"><span>Механика</span><span>Масштаб эффекта</span><span>Δ выручки</span><span>Δ контента</span></div><div id="effectList"></div></div>
-        <div class="caveat"><strong>Ограничение атрибуции.</strong> Это наблюдаемый pre/post, а не causal uplift: сезонность, параллельные акции и естественный рост похожих клиентов пока не вычтены. Июнь не включён — его post-окно ещё не закрыто.</div>
+        <div class="caveat"><strong>Как читать цифру +65,97 млн ₽.</strong> Это частичный наблюдаемый pre/post по новым подключениям H1, а не causal uplift и не полный прирост за полугодие. Сезонность, параллельные акции и рост похожих клиентов пока не вычтены; июнь, продления после первого месяца и подключения 2025 года не включены.</div>
       </div>
     </section>
 
     <section id="bugs" class="tab">
       <div class="section">
-        <div class="section-head"><div><h2>Почему нельзя целиком перейти на Auto ППС</h2><p>Сводка сигналов из Mattermost #chubaka за H1 2026. Ручник остаётся страховочным контуром для неподдержанных и сломанных сценариев.</p></div><span class="pill">8 L0-сигналов</span></div>
-        <div class="bugs-top"><article class="bug-kpi card"><strong>3</strong><span>подтверждённых поломки / ограничения</span></article><article class="bug-kpi card"><strong>4</strong><span>ожидаемое поведение порогов, не баг</span></article><article class="bug-kpi card"><strong>1</strong><span>сигнал без закрытого вывода</span></article><article class="bug-kpi card"><strong>4</strong><span>системных класса причин</span></article></div>
+        <div class="section-head"><div><h2>Почему пока нельзя всех перевести на Auto ППС</h2><p>В некоторых ситуациях система неверно считает условия или не применяет скидку. Тогда человеку приходится проверять и исправлять всё вручную.</p></div><span class="pill">8 обращений за H1</span></div>
+        <div class="bugs-top"><article class="bug-kpi card"><strong>3</strong><span>случая, когда система действительно не сработала</span></article><article class="bug-kpi card"><strong>4</strong><span>случая, когда система сработала по правилу, но правило оказалось непонятным</span></article><article class="bug-kpi card"><strong>1</strong><span>случай, который пока не удалось объяснить до конца</span></article><article class="bug-kpi card"><strong>4</strong><span>главные причины, почему нужен ручной контроль</span></article></div>
         <div class="bug-grid">
-          <article class="bug card"><span class="bug-num">01</span><span class="pill">данные порога</span><h3>Бесплатный контент смешивается с платным</h3><p>После 0+1 бесплатные размещения попадают в 90-дневную историю и завышают порог Auto ППС. До очистки окна клиенту нужен временный ручной сценарий.</p></article>
-          <article class="bug card"><span class="bug-num">02</span><span class="pill">доставка скидки</span><h3>Тег есть, но скидка не доезжает</h3><p>Уровень назначен, а pricing-сегмент или тариф не пересчитан. Исправление требует повторного применения или ручного обхода.</p></article>
-          <article class="bug card"><span class="bug-num">03</span><span class="pill">порядок событий</span><h3>Пополнение раньше тега не засчитывается</h3><p>Результат зависит от последовательности: тег, оплата, продление и срок уровня. Клиент может формально выполнить условие, но не получить льготу.</p></article>
-          <article class="bug card"><span class="bug-num">04</span><span class="pill">операционная модель</span><h3>Нет единого контура исключений</h3><p>Диагностика живёт в Auto ППС, корректировки — у трафиков и менеджеров. Нет единого pre-check, владельца и автоматического срока выхода из ручника.</p></article>
+          <article class="bug card"><span class="bug-num">01</span><span class="pill">неверный подсчёт</span><h3>Бесплатное считается как платное</h3><p>Клиент получил бесплатные размещения, а система решила, что он их купил. Поэтому в следующий раз она просит от него слишком большой рост.</p></article>
+          <article class="bug card"><span class="bug-num">02</span><span class="pill">скидка не применилась</span><h3>Обещание есть, а цена не изменилась</h3><p>В системе записано, что клиенту положена скидка, но в итоговой цене её нет. Человеку приходится запускать расчёт повторно.</p></article>
+          <article class="bug card"><span class="bug-num">03</span><span class="pill">важен порядок</span><h3>Клиент сделал действие слишком рано</h3><p>Если клиент оплатил или продлил тариф до того, как система включила правило, его действие может не засчитаться.</p></article>
+          <article class="bug card"><span class="bug-num">04</span><span class="pill">нет одного окна</span><h3>Исправления делаются в разных местах</h3><p>Один человек проверяет условия, другой меняет тариф, третий следит за сроком. Нет одного понятного места, где видно весь путь клиента.</p></article>
         </div>
         <div class="section-head"><div><h2>Зачем бизнесу нужны ручники</h2><p>Ручной контур сейчас компенсирует продуктовые ограничения, но сам по себе не является бизнес-целью.</p></div><span class="pill">управленческий вывод</span></div>
         <div class="initiative-summary">
-          <article class="summary-card card"><span>Зачем сохраняем сейчас</span><h3>Не терять выручку и контент</h3><p>Ручники позволяют удержать клиента, поддержать индексацию, запустить апсейл или временное исключение, когда общий автоматический сценарий не подходит.</p></article>
-          <article class="summary-card card"><span>Чего добиваемся</span><h3>Управляем целевым оффером</h3><p>Меняем цену, объём, бонус или срок для конкретного сегмента так, чтобы клиент сохранил бюджет и увеличил платный контент или VAS-spend.</p></article>
-          <article class="summary-card card"><span>Почему просим автоматизацию</span><h3>Сохранить механику, убрать ручной труд</h3><p>Нужны воспроизводимые правила, меньше ошибок доставки, ограниченный срок исключения и независимость результата от конкретного исполнителя.</p></article>
+          <article class="summary-card card"><span>Зачем сохраняем сейчас</span><h3>Не терять деньги и объявления</h3><p>Ручные условия помогают сохранить клиента, когда обычное правило ему не подходит или система пока не умеет правильно посчитать скидку.</p></article>
+          <article class="summary-card card"><span>Чего добиваемся</span><h3>Дать подходящее предложение</h3><p>Меняем цену, количество объявлений, бонус или срок так, чтобы клиент продолжил платить и размещать больше объявлений.</p></article>
+          <article class="summary-card card"><span>Почему просим автоматизацию</span><h3>Сохранить пользу, убрать ручную работу</h3><p>Хотим, чтобы одинаковые случаи решались одинаково, скидка не терялась, а временные условия сами заканчивались в нужный день.</p></article>
         </div>
-        <div class="section-head"><div><h2>Сводная логика автоматизации</h2><p>Рекомендации из карточек механик собираются в один сквозной продуктовый контур.</p></div><span class="pill">целевая архитектура процесса</span></div>
-        <div class="flow card"><div class="flow-step"><strong>1. Чистые факты</strong><span>Разделить платный и бесплатный контент, зафиксировать источник и событие</span></div><div class="flow-step"><strong>2. Rules & eligibility</strong><span>Единые правила сегмента, совместимости акций, цены и полномочий</span></div><div class="flow-step"><strong>3. Pre-check</strong><span>До запуска показать порог, скидку, будущую цену и причину отказа</span></div><div class="flow-step"><strong>4. Сквозная доставка</strong><span>Контроль тег → сегмент → тариф → льгота с повторным применением</span></div><div class="flow-step"><strong>5. Lifecycle</strong><span>Срок, автовыход, возврат в Auto ППС и измерение эффекта</span></div></div>
-        <div class="section-head"><div><h2>Список инициатив</h2><p>Приоритет показывает, что быстрее всего снижает риск и объём ручных операций.</p></div><span class="pill">предлагаемый backlog</span></div>
+        <div class="section-head"><div><h2>Как должен работать понятный автоматический процесс</h2><p>Система сама проверяет условия, применяет скидку и вовремя возвращает клиента к обычным правилам.</p></div><span class="pill">целевая схема</span></div>
+        <div class="flow card"><div class="flow-step"><strong>1. Правильно посчитать</strong><span>Не смешивать бесплатные и оплаченные размещения</span></div><div class="flow-step"><strong>2. Проверить правила</strong><span>Понять, подходит ли акция и можно ли сочетать её с другими</span></div><div class="flow-step"><strong>3. Показать результат заранее</strong><span>До запуска показать будущую цену, скидку и причину отказа</span></div><div class="flow-step"><strong>4. Убедиться, что скидка сработала</strong><span>Проверить итоговую цену и повторить расчёт, если что-то не дошло</span></div><div class="flow-step"><strong>5. Вовремя закончить</strong><span>После окончания акции убрать временные условия и вернуть обычный тариф</span></div></div>
+        <div class="section-head"><div><h2>Что нужно сделать</h2><p>Сначала исправляем самые опасные ошибки, затем упрощаем запуск и контроль акций.</p></div><span class="pill">список работ</span></div>
         <div class="initiatives card">
           <table class="initiative-table">
-            <thead><tr><th>Приоритет</th><th>Инициатива</th><th>Какие механики покрывает</th><th>Что делаем</th><th>Ожидаемый результат</th></tr></thead>
+            <thead><tr><th>Очередь</th><th>Что делаем</th><th>Для каких акций</th><th>Как это будет работать</th><th>Что получим</th></tr></thead>
             <tbody>
-              <tr><td><span class="priority">P0</span></td><td><strong>Корректный факт порогов ППС</strong><small>Платный и бесплатный контент отдельно</small></td><td>ППС manual, 0+1, Try&Buy</td><td>Добавить происхождение контента и исключить бесплатную часть из 90-дневного порога.</td><td>Меньше временных ручников после промопериода.</td></tr>
-              <tr><td><span class="priority">P0</span></td><td><strong>Надёжная доставка льготы</strong><small>Idempotent pipeline и мониторинг</small></td><td>ППС manual, повышение цен, бонусы</td><td>Проверять цепочку тег → pricing-сегмент → тариф → скидка; автоматически повторять незавершённый шаг.</td><td>Меньше критичных ошибок и ручных переустановок.</td></tr>
-              <tr><td><span class="priority">P1</span></td><td><strong>Pre-check оффера</strong><small>Расчёт до назначения</small></td><td>ППС, лестница, повышение цен</td><td>Показывать будущий порог, цену, скидку, совместимость и причину отказа до запуска.</td><td>Меньше ошибочных миграций и согласований.</td></tr>
-              <tr><td><span class="priority">P1</span></td><td><strong>Движок правил и eligibility</strong><small>Единый каталог механик</small></td><td>Лестница, регионы, элитка, 0+5, SUB</td><td>Формализовать сегменты, ступени, лимиты, совместимость и шаблоны назначения.</td><td>Массовый запуск без ручной сборки тарифа.</td></tr>
-              <tr><td><span class="priority">P1</span></td><td><strong>Lifecycle исключений</strong><small>Начало, срок и автоматический выход</small></td><td>Все временные ручные сценарии</td><td>Хранить причину и owner, автоматически снимать тег и возвращать клиента в Auto ППС.</td><td>Нет бессрочных ручников и забытых исключений.</td></tr>
-              <tr><td><span class="priority">P2</span></td><td><strong>Каталог спецофферов</strong><small>Шаблоны и цифровое согласование</small></td><td>Спец.Оффер, Крым, КС, регионы</td><td>Задать типовые параметры, лимиты полномочий, approval flow и аудит изменений.</td><td>Быстрее запуск при контролируемой экономике.</td></tr>
-              <tr><td><span class="priority">P2</span></td><td><strong>Контроль эффекта</strong><small>Единый мониторинг ручной доли</small></td><td>Все акции</td><td>Показывать долю ручных операций, ошибки доставки, срок исключения, выручку и контент.</td><td>Понятен вклад инициатив и следующий кандидат на автоматизацию.</td></tr>
+              <tr><td><span class="priority">Сначала</span></td><td><strong>Разделить бесплатное и оплаченное</strong></td><td>ППС manual, 0+1, Try&Buy</td><td>Бесплатные размещения больше не увеличивают требования к клиенту.</td><td>После акции реже придётся временно переводить клиента на ручные условия.</td></tr>
+              <tr><td><span class="priority">Сначала</span></td><td><strong>Проверять итоговую скидку</strong></td><td>ППС manual, повышение цен, бонусы</td><td>После расчёта система проверяет цену и сама повторяет шаг, если скидка не появилась.</td><td>Меньше ошибок и ручных перезапусков.</td></tr>
+              <tr><td><span class="priority">Далее</span></td><td><strong>Показывать условия до запуска</strong></td><td>ППС, лестница, повышение цен</td><td>Менеджер заранее видит будущую цену, скидку и возможную проблему.</td><td>Меньше неверно запущенных акций.</td></tr>
+              <tr><td><span class="priority">Далее</span></td><td><strong>Собрать правила акций в одном месте</strong></td><td>Лестница, регионы, элитка, 0+5, SUB</td><td>В одном месте хранятся условия входа, сочетания акций и допустимые скидки.</td><td>Акции можно запускать массово, без ручной сборки.</td></tr>
+              <tr><td><span class="priority">Далее</span></td><td><strong>Автоматически завершать временные условия</strong></td><td>Все временные ручные сценарии</td><td>Система помнит срок акции и сама возвращает обычные условия.</td><td>Не остаётся забытых ручников.</td></tr>
+              <tr><td><span class="priority">После</span></td><td><strong>Сделать шаблоны специальных предложений</strong></td><td>Спец.Оффер, Крым, КС, регионы</td><td>Менеджер выбирает готовый вариант вместо сборки условий с нуля.</td><td>Быстрее запуск и меньше случайных ошибок.</td></tr>
+              <tr><td><span class="priority">После</span></td><td><strong>Показывать результат каждой акции</strong></td><td>Все акции</td><td>В одном отчёте видны клиенты, сроки, ошибки, выручка и контент.</td><td>Понятно, какую механику автоматизировать следующей.</td></tr>
             </tbody>
           </table>
         </div>
@@ -186,12 +199,12 @@
 
   <script>
     const months=[
-      {m:'Янв',total:6230,manual:3026,auto:3204,share:48.57,revenue:508.6},
-      {m:'Фев',total:6270,manual:2919,auto:3351,share:46.56,revenue:472.8},
-      {m:'Мар',total:6400,manual:2947,auto:3453,share:46.05,revenue:543.5},
-      {m:'Апр',total:6511,manual:2787,auto:3724,share:42.80,revenue:557.6},
-      {m:'Май',total:6372,manual:2688,auto:3684,share:42.18,revenue:591.7},
-      {m:'Июн',total:6475,manual:2435,auto:4040,share:37.61,revenue:610.6}
+      {m:'Янв',total:6230,manual:2860,auto:3370,share:45.91,revenue:508.6},
+      {m:'Фев',total:6270,manual:2753,auto:3517,share:43.91,revenue:472.8},
+      {m:'Мар',total:6400,manual:2769,auto:3631,share:43.27,revenue:543.5},
+      {m:'Апр',total:6511,manual:2606,auto:3905,share:40.02,revenue:557.6},
+      {m:'Май',total:6372,manual:2506,auto:3866,share:39.33,revenue:591.7},
+      {m:'Июн',total:6475,manual:2258,auto:4217,share:34.87,revenue:610.6}
     ];
     const mechanics=[
       {id:'pps-manual',name:'ППС manual',active:2002,h1:2195,color:'#2563eb',goal:'Удерживать и наращивать тарифную выручку там, где стандартная логика Auto ППС не покрывает клиентский сценарий.',why:'Индивидуальные пороги, переходы после бесплатного контента, докупки и сбои доставки скидки требуют ручного управления.',auto:'Pre-check, единый движок исключений и автоматический возврат после закрытия 90-дневного окна.',rev:24.47,content:2994,closed:2032},
@@ -221,18 +234,15 @@
       ['ППС manual',24.469,2994,'pps-manual'],['ППС auto',20.999,229,'pps-auto'],['Лестница',11.636,1411,'ladder'],['Повышение цен ППС',2.545,-387,'price'],['0+1',2.370,812,'zero-one'],['Повышение цен Бонусы 2.2',1.634,-147,'bonus'],['Try&Buy',1.298,208,'try'],['Спец.Оффер',.747,-22,'special'],['Поддержка регионов',.222,77,'regions'],['Элитка',-.149,67,'elite']
     ];
     const treeCopy={
-      all:{tag:'Весь контур',title:'6 475 активных тарифов',text:'Все клиенты пяти команд RRE SS&Sub с тарифом, активным на 30 июня.',a:'996 ручных тарифов',b:'2 435 с ручными операциями',foot:'Ручной тариф — характеристика тарифа. Ручная операция — более широкий слой: custom-тариф или любой активный ручной тег.'},
-      operations:{tag:'Операционный слой',title:'С ручными операциями · 2 435',text:'У клиента ручной тариф или хотя бы один активный тег, требующий ручного процесса. ППС auto и CRE-теги ручными не считаются.',a:'37,61% ≈ 38%',b:'−10,96 п.п. к январю',foot:'Ветка разбивается без дублей: 996 ручных тарифов + 1 439 стандартных тарифов с ручными тегами.'},
-      automatic:{tag:'Автоматический слой',title:'Полностью автоматически · 4 040',text:'Стандартный тариф без активных ручных тегов на конец июня.',a:'62,39% от всех',b:'+836 к январю',foot:'Автоматический слой не означает отсутствие акций: например, ППС auto остаётся автоматической механикой.'},
-      'manual-tariff':{tag:'Тип тарифа',title:'Ручной тариф · 996',text:'Тариф имеет технический признак tariff_custom = true. Только эта ветка называется ручными тарифами.',a:'15,38% от всех',b:'−8,46 п.п. к январю',foot:'Ниже раскрыты активные акции внутри ручных тарифов. Они пересекаются и не складываются в 996.'},
-      'manual-tag':{tag:'Тип операции',title:'Ручной тег на standard · 1 439',text:'Тариф остаётся стандартным, но на клиенте активен один или несколько ручных тегов.',a:'22,22% от всех',b:'1 262 · ППС manual',foot:'ППС manual здесь называется ручным тегом, а не ручным тарифом. Ниже — состав активных тегов; они могут пересекаться.'}
+      all:{tag:'Весь контур',title:'6 475 активных тарифов',text:'Все клиенты пяти команд RRE SS&Sub с тарифом, активным на 30 июня.',a:'2 258 в ручном контуре',b:'4 217 без ручных признаков',foot:'Ручной контур считаем как объединение ручного тарифа и «ППС manual» без двойного счёта.'},
+      manual:{tag:'Ручной контур',title:'Ручной контур · 2 258',text:'Клиент входит сюда, если у него ручной тариф или активен «ППС manual».',a:'34,87% от всех',b:'−11,04 п.п. к январю',foot:'Внутри: 996 ручных тарифов и 1 262 стандартных тарифа с «ППС manual» без пересечения.'},
+      automatic:{tag:'Остальной контур',title:'Без ручных признаков · 4 217',text:'Нет ни признака ручного тарифа, ни активного «ППС manual» на 30 июня.',a:'65,13% от всех',b:'+847 к январю',foot:'ППС auto и другие полностью автоматические сценарии остаются в этой ветке.'},
+      'manual-tariff':{tag:'Тип тарифа',title:'Ручной тариф · 996',text:'Тариф имеет технический признак tariff_custom = true.',a:'15,38% от всех',b:'−8,46 п.п. к январю',foot:'Ниже раскрыты активные акции внутри ручных тарифов. Клиент может участвовать в нескольких акциях.'},
+      'manual-tag':{tag:'Механика на standard',title:'ППС manual · 1 262',text:'Тариф остаётся стандартным, но его ценовой сценарий управляется через «ППС manual».',a:'19,49% от всех',b:'55,9% ручного контура',foot:'Эта ветка не называется ручным тарифом: ручным остаётся только способ управления ППС.'}
     };
     const treeBranchActions={
       'manual-tariff':[
         ['pps-manual',740],['ladder',295],['special',54],['regions',43],['elite',33],['crimea',25],['price',23],['special-ks',15],['bonus-promo',12],['sub-ruble',8],['try',6],['zero5',2]
-      ],
-      'manual-tag':[
-        ['pps-manual',1262],['price',137],['crimea',51],['ladder',14],['zero5',12],['sub-ruble',11],['special',6],['bonus-promo',4],['try',3],['elite',2]
       ]
     };
 
@@ -241,13 +251,11 @@
     function renderActions(branch){
       const actions=treeBranchActions[branch];
       const box=document.querySelector('#treeActions');
+      if(branch==='manual-tag'){box.innerHTML='<div class="tree-actions-head"><strong>ППС manual — конечная ветка</strong><span>1 262 клиента · 19,49% от всех тарифов; объяснение показано справа</span></div>';return}
       if(!actions){box.innerHTML='<div class="tree-actions-head"><strong>Провалитесь в одну из двух веток</strong><span>Здесь появятся конкретные активные акции</span></div>';return}
-      const isManualTariff=branch==='manual-tariff';
-      const label=isManualTariff?'Акции внутри ручных тарифов':'Ручные теги на стандартных тарифах';
-      const tariffBase=isManualTariff?996:5479;
-      const tariffShareLabel=isManualTariff?'Доля ручных тарифов':'Доля standard-тарифов';
-      const pct=(value,base)=>(100*value/base).toLocaleString('ru-RU',{minimumFractionDigits:1,maximumFractionDigits:1})+'%';
-      box.innerHTML=`<div class="tree-actions-head"><strong>${label}</strong><span>доли не складываются: клиент может участвовать в нескольких акциях</span></div><div class="tree-actions-table"><div class="action-header"><span>Акция / тег</span><span>Клиенты</span><span>${tariffShareLabel}</span><span>Доля ручных операций</span><span>Доля всех тарифов</span></div>${actions.map(([id,count])=>{const m=mechanics.find(x=>x.id===id);return `<button class="action-node" data-action="${id}" data-branch="${branch}" data-count="${count}"><strong>${m.name}</strong><span class="action-count">${fmt(count)}</span><span>${pct(count,tariffBase)}</span><span>${pct(count,2435)}</span><span>${pct(count,6475)}</span></button>`}).join('')}</div>`;
+      const label='Акции внутри ручных тарифов';
+      const pct=value=>(100*value/6475).toLocaleString('ru-RU',{minimumFractionDigits:1,maximumFractionDigits:1})+'%';
+      box.innerHTML=`<div class="tree-actions-head"><strong>${label}</strong><span>клиент может участвовать в нескольких акциях</span></div><div class="tree-actions-table"><div class="action-header"><span>Акция</span><span>Клиенты</span><span>Доля всех тарифов</span><span>Почему ещё не автоматизирована</span></div>${actions.map(([id,count])=>{const m=mechanics.find(x=>x.id===id);return `<button class="action-node" data-action="${id}" data-branch="${branch}" data-count="${count}"><strong>${m.name}</strong><span class="action-count">${fmt(count)}</span><span>${pct(count)}</span><span class="action-reason">${m.why}</span></button>`}).join('')}</div>`;
       box.querySelectorAll('.action-node').forEach(n=>n.onclick=()=>renderAction(n.dataset.branch,n.dataset.action,+n.dataset.count));
     }
     function renderAction(branch,id,count){
@@ -261,7 +269,7 @@
     const drawer=document.querySelector('#drawerBack');function openDrawer(id){const m=mechanics.find(x=>x.id===id)||mechanics.find(x=>x.name===id);if(!m)return;document.querySelector('#drawerContent').innerHTML=`<span class="pill">RRE SS&Sub · H1</span><h2>${m.name}</h2><p style="color:var(--muted)">${m.active} активных клиентов на 30 июня.</p><div class="drawer-kpis"><div class="drawer-kpi"><span>Наблюдаемый Δ выручки</span><strong>${m.rev>=0?'+':''}${m.rev.toLocaleString('ru-RU')} млн ₽</strong></div><div class="drawer-kpi"><span>Δ контента</span><strong>${m.content>=0?'+':''}${fmt(m.content)}</strong></div></div><div class="drawer-block"><h4>Зачем бизнесу</h4><p>${m.goal}</p></div><div class="drawer-block"><h4>Почему возникает ручник</h4><p>${m.why}</p></div><div class="drawer-block"><h4>Как автоматизировать</h4><p>${m.auto}</p></div><div class="drawer-block"><h4>Как посчитан эффект</h4><p>Месяц после подключения минус месяц до. Закрытых окон: ${fmt(m.closed)}. Это pre/post, не causal uplift.</p></div>`;drawer.classList.add('open')}
     document.querySelector('#drawerClose').onclick=()=>drawer.classList.remove('open');drawer.onclick=e=>{if(e.target===drawer)drawer.classList.remove('open')};
     document.querySelector('#stackList').innerHTML=months.map(x=>`<div class="stack-row"><strong>${x.m}</strong><div class="bar" title="Ручной ${fmt(x.manual)} · автоматический ${fmt(x.auto)}"><span class="manual" style="width:${x.share}%"></span><span class="auto" style="width:${100-x.share}%"></span></div><span class="row-val">${x.share.toLocaleString('ru-RU')}%</span></div>`).join('');
-    const ys=[55,69,73,95,100,132],xs=[55,150,245,340,435,530];document.querySelector('#sharePoints').innerHTML=months.map((m,i)=>`<circle class="point" cx="${xs[i]}" cy="${ys[i]}" r="5" data-tip="${m.m}: ${m.share.toLocaleString('ru-RU')}% · ${fmt(m.manual)} клиентов с ручными операциями"/>`).join('');document.querySelector('#monthLabels').innerHTML=months.map((m,i)=>`<text class="axistext" x="${xs[i]-12}" y="255">${m.m}</text>`).join('');
+    const ys=[74,88,93,116,121,152],xs=[55,150,245,340,435,530];document.querySelector('#sharePoints').innerHTML=months.map((m,i)=>`<circle class="point" cx="${xs[i]}" cy="${ys[i]}" r="5" data-tip="${m.m}: ${m.share.toLocaleString('ru-RU')}% · ${fmt(m.manual)} клиентов в ручном контуре"/>`).join('');document.querySelector('#monthLabels').innerHTML=months.map((m,i)=>`<text class="axistext" x="${xs[i]-12}" y="255">${m.m}</text>`).join('');
     document.querySelector('#heatBody').innerHTML=Object.entries(activeSeries).map(([name,v])=>`<tr><td>${name}</td>${v.slice(0,6).map((n,i)=>`<td class="${n===Math.max(...v.slice(0,6))?'hot':''}">${fmt(n)}</td>`).join('')}<td><strong>${fmt(v[6])}</strong></td></tr>`).join('');
     const maxRev=Math.max(...months.map(x=>x.revenue));document.querySelector('#revenueStrip').innerHTML=months.map(x=>`<article class="rev" style="--h:${Math.round(x.revenue/maxRev*70)}%"><span>${x.m}</span><strong>${x.revenue.toLocaleString('ru-RU')} млн ₽</strong></article>`).join('');
     const maxEffect=Math.max(...effects.map(x=>Math.abs(x[1])));document.querySelector('#effectList').innerHTML=effects.map(x=>`<div class="effect-row" data-effect="${x[3]}"><span class="effect-name">${x[0]}</span><div class="effect-track"><div class="effect-fill ${x[1]<0?'neg':''}" style="--w:${Math.max(2,Math.abs(x[1])/maxEffect*100)}%"></div></div><span class="money" style="color:${x[1]<0?'var(--red)':'#087c61'}">${x[1]>=0?'+':''}${x[1].toLocaleString('ru-RU')} млн ₽</span><span class="content">${x[2]>=0?'+':''}${fmt(x[2])}</span></div>`).join('');
