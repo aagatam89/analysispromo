@@ -17,7 +17,7 @@
     .topbar{position:sticky;top:0;z-index:30;margin:18px auto 0;padding:10px 12px 10px 20px;display:flex;align-items:center;gap:24px;background:rgba(255,255,255,.84);border:1px solid rgba(255,255,255,.9);backdrop-filter:blur(20px);border-radius:18px;box-shadow:0 10px 35px rgba(16,29,66,.08)}
     .brand{display:flex;align-items:center;gap:11px;font-weight:800;white-space:nowrap}.brandmark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--violet));position:relative;box-shadow:0 8px 20px rgba(37,99,235,.3)}
     .brandmark:after{content:"";position:absolute;width:12px;height:12px;border:3px solid white;border-left:0;border-bottom:0;transform:rotate(45deg);left:8px;top:8px}
-    .nav{display:flex;gap:5px;margin-left:auto;overflow:auto}.nav button{border:0;background:transparent;color:var(--muted);padding:10px 15px;border-radius:12px;cursor:pointer;white-space:nowrap;font-weight:650;transition:.25s}
+    .nav{display:flex;gap:5px;margin-left:auto;overflow:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav button{border:0;background:transparent;color:var(--muted);padding:10px 15px;border-radius:12px;cursor:pointer;white-space:nowrap;font-weight:650;transition:.25s}
     .nav button:hover{background:#f0f4ff;color:var(--blue)}.nav button.active{background:var(--navy);color:white;box-shadow:0 8px 22px rgba(16,29,66,.2)}
     .stamp{font-size:12px;color:var(--muted);padding-right:6px;white-space:nowrap}
     .hero{position:relative;overflow:hidden;margin-top:18px;border-radius:32px;min-height:430px;padding:62px 64px;background:linear-gradient(120deg,#0d1836 0%,#142b62 57%,#145c72 100%);color:white;box-shadow:var(--shadow)}
@@ -43,11 +43,14 @@
     .standard-breakdown{margin-top:18px;padding:20px;border:1px solid #dce5f5;border-radius:20px;background:linear-gradient(180deg,#f8faff,#f2f6fc)}.standard-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}.standard-head h4{margin:0 0 5px;font-size:18px}.standard-head p{margin:0;color:#667085;font-size:11px;max-width:760px}.standard-total{text-align:right;white-space:nowrap}.standard-total strong{display:block;font-size:24px;color:#10214c}.standard-total span{font-size:10px;color:#667085}.standard-bar{display:flex;height:12px;overflow:hidden;border-radius:999px;margin:16px 0 12px;background:#e5eaf3}.standard-bar span{height:100%;transition:filter .2s}.standard-bar span:hover{filter:brightness(.9)}.standard-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.standard-item{padding:12px;border-radius:14px;background:white;border:1px solid #e2e8f2}.standard-item i{display:block;width:9px;height:9px;border-radius:50%;margin-bottom:9px}.standard-item strong{display:block;font-size:18px}.standard-item b{display:block;margin:3px 0 7px;font-size:11px}.standard-item p{margin:0;color:#667085;font-size:9px;line-height:1.45}.standard-summary{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}.standard-summary span{padding:7px 10px;border-radius:999px;background:#e8eefb;color:#27406f;font-size:10px;font-weight:700}
     .dokup-effect{margin-top:24px;padding:24px;border-radius:24px;background:linear-gradient(135deg,#10214c 0%,#153873 58%,#0b6a72 100%);color:white;box-shadow:0 18px 44px rgba(17,36,79,.18)}.dokup-head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:18px}.dokup-head h4{margin:0 0 6px;font-size:22px}.dokup-head p{margin:0;max-width:780px;color:#c9d7f1;font-size:12px;line-height:1.55}.dokup-badge{padding:8px 12px;border-radius:999px;background:rgba(108,244,207,.16);color:#7df0d2;font-size:11px;font-weight:800;white-space:nowrap}.dokup-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.dokup-kpi{padding:16px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.08)}.dokup-kpi span{display:block;color:#b7c8e8;font-size:10px;text-transform:uppercase;letter-spacing:.045em}.dokup-kpi strong{display:block;margin:7px 0 5px;font-size:24px}.dokup-kpi small{display:block;color:#dce6f7;font-size:10px;line-height:1.45}.dokup-callout{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}.dokup-callout div{padding:14px 16px;border-radius:14px;background:rgba(6,15,39,.28);font-size:11px;color:#dce6f7}.dokup-callout strong{color:white}.dokup-table-wrap{overflow:auto;margin-top:14px}.dokup-table{width:100%;min-width:850px;border-collapse:collapse}.dokup-table th,.dokup-table td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.12);text-align:right;font-size:11px}.dokup-table th{color:#aebfdf;text-transform:uppercase;font-size:9px;letter-spacing:.045em}.dokup-table th:first-child,.dokup-table td:first-child{text-align:left}.dokup-table td strong{font-size:12px}.dokup-positive{color:#7df0d2;font-weight:800}.dokup-method{margin-top:16px;padding:14px 16px;border-radius:14px;background:white;color:#33415c;font-size:11px;line-height:1.55}.dokup-method strong{color:#0f1d3d}.dokup-method .range{color:#175e65;font-weight:800}
     .tree{grid-template-columns:minmax(180px,.8fr) 64px minmax(190px,1fr) 64px minmax(190px,1fr);min-height:330px}.hero-kpis{grid-template-columns:1fr}.hero-kpi.wide{grid-column:auto}
+    .tree-shortcut{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;padding:12px 14px;border:1px solid #d8e3fb;border-radius:14px;background:#eef4ff;color:#24447f;font-size:12px}.tree-shortcut button{border:0;border-radius:10px;padding:9px 12px;background:var(--blue);color:white;font-weight:800;cursor:pointer;white-space:nowrap}.split-arrows{height:150px;position:relative;color:#7890bd;font-size:31px;font-weight:900}.split-arrows:before{position:absolute;left:50%;top:50%;width:86px;transform:translate(-50%,-50%);font-size:9px;line-height:1.25;text-align:center;color:#667085;font-weight:750}.root-split:before{content:"делим все тарифы"}.actions-split:before{content:"только 4 030 с акциями"}.split-arrows span{position:absolute;right:2px}.split-arrows span:first-child{top:6px}.split-arrows span:last-child{bottom:6px}
+    .structure-card{padding:26px;overflow:auto}.structure-table{width:100%;min-width:940px;border-collapse:separate;border-spacing:0 7px}.structure-table th{text-align:left;padding:8px 13px;color:#7c879a;font-size:10px;text-transform:uppercase;letter-spacing:.055em}.structure-table td{padding:14px 13px;background:white;border-top:1px solid #e8ecf3;border-bottom:1px solid #e8ecf3;font-size:13px}.structure-table td:first-child{border-left:1px solid #e8ecf3;border-radius:12px 0 0 12px}.structure-table td:last-child{border-right:1px solid #e8ecf3;border-radius:0 12px 12px 0}.structure-table .level-1 strong{padding-left:20px}.structure-table .level-2 strong{padding-left:40px}.structure-table .level-3 strong{padding-left:60px}.structure-table .ready td{background:#ecfbf5}.structure-table .hold td{background:#fff8ed}.structure-metric{font-size:20px;font-weight:840;font-variant-numeric:tabular-nums}.profile-groups{grid-template-columns:repeat(2,1fr)}.profile-group.not-hunted:before{background:var(--mint)}.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.history-card{padding:25px}.history-card h3{margin:0 0 5px}.history-card p{margin:0;color:var(--muted);font-size:12px}.history-bars{height:250px;display:grid;grid-template-columns:repeat(12,1fr);gap:7px;align-items:end;margin-top:24px;padding-top:18px;border-bottom:1px solid #dfe4ec}.history-col{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:5px}.history-col i{display:block;width:100%;height:var(--h);min-height:4px;border-radius:7px 7px 2px 2px;background:linear-gradient(#73a7ff,#2867ea);animation:rise .8s both}.history-col.h1 i{background:linear-gradient(#75ddbc,#159b79)}.history-col b{font-size:9px}.history-col small{font-size:8px;color:var(--muted)}.history-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}.history-summary div{padding:15px;border-radius:14px;background:#f6f8fb}.history-summary span{display:block;color:var(--muted);font-size:10px}.history-summary strong{display:block;font-size:25px;color:#087c61;margin-top:3px}.important-verdict{margin-top:16px;padding:28px 30px;border-radius:22px;background:linear-gradient(120deg,#5b1c20,#a43a31);color:white;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}.important-verdict h3{font-size:24px;margin:0 0 6px}.important-verdict p{margin:0;color:#ffe1dc}.profile-effect{padding:28px}.profile-effect .dokup-effect{margin:0}
+    .structure-path{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}.structure-step{padding:22px;position:relative;overflow:visible}.structure-step:not(:last-child):after{content:"→";position:absolute;right:-22px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:900;z-index:2}.structure-step span,.structure-step small{display:block;color:var(--muted);font-size:11px}.structure-step strong{display:block;font-size:30px;letter-spacing:-.04em;margin:6px 0}.structure-step b{display:block;font-size:14px}.structure-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.structure-pair article{padding:24px}.structure-pair span{display:block;color:var(--muted);font-size:11px}.structure-pair strong{display:block;font-size:32px;margin:5px 0}.structure-pair p{margin:0;color:var(--muted);font-size:13px}.structure-subhead{margin:32px 4px 12px}.structure-subhead h3{margin:0 0 4px;font-size:22px}.structure-subhead p{margin:0;color:var(--muted)}.structure-simple{min-width:720px}.structure-simple th:nth-child(2),.structure-simple td:nth-child(2){text-align:right}
     @keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes draw{to{stroke-dashoffset:0}}@keyframes appear{to{opacity:1}}@keyframes rise{from{transform:translateY(100%)}to{transform:none}}@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(103,232,189,0)}}@keyframes float{50%{transform:translateY(22px) scale(1.06)}}
-    @media(max-width:1100px){.hero-grid,.tree-layout,.chart-grid,.effect-hero,.profile-hero-grid{grid-template-columns:1fr}.bugs-top{grid-template-columns:repeat(2,1fr)}.tree-stage{min-height:auto}.tree{grid-template-columns:1fr 45px 1fr 45px 1fr}.tree-actions-grid{grid-template-columns:repeat(3,1fr)}.detail{min-height:360px}.hero{padding:48px}.hero-kpis{grid-template-columns:repeat(3,1fr)}.hero-kpi.wide{grid-column:auto}.effect-row{grid-template-columns:180px 1fr 105px}.effect-row .content{display:none}.profile-method{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:720px){.shell{width:min(100% - 20px,1500px)}.topbar{padding:9px 10px}.brand span,.stamp{display:none}.nav button{padding:9px 11px;font-size:12px}.hero{padding:34px 24px;min-height:auto}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-grid{gap:32px}.hero-kpis{grid-template-columns:1fr 1fr}.hero-kpi.wide{grid-column:1/-1}.tree-wrap{padding:16px}.tree-stage{padding:16px;overflow:auto}.tree{min-width:820px}.tree-actions{min-width:820px}.tree-actions-grid{grid-template-columns:repeat(4,1fr)}.bug-grid,.bugs-top,.profile-groups,.profile-verdict{grid-template-columns:1fr}.revenue-strip{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr}.flow-step{border-right:0;border-bottom:1px dashed #cbd3e2}.flow-step:after{display:none}.effect-row{grid-template-columns:130px 1fr 90px}.section-head{align-items:start;flex-direction:column}.source{flex-direction:column}.profile-hero{padding:28px 22px}.profile-hero h2{font-size:38px}.profile-kpis{grid-template-columns:1fr 1fr}.profile-decision{grid-template-columns:1fr}.profile-method{grid-template-columns:1fr}}
+    @media(max-width:1100px){.hero-grid,.tree-layout,.chart-grid,.effect-hero,.profile-hero-grid{grid-template-columns:1fr}.bugs-top{grid-template-columns:repeat(2,1fr)}.tree-stage{min-height:auto}.tree{grid-template-columns:1fr 45px 1fr 45px 1fr}.tree-actions-grid{grid-template-columns:repeat(3,1fr)}.detail{min-height:360px}.hero{padding:48px}.hero-kpis{grid-template-columns:repeat(3,1fr)}.hero-kpi.wide{grid-column:auto}.effect-row{grid-template-columns:180px 1fr 105px}.effect-row .content{display:none}.profile-method{grid-template-columns:repeat(2,1fr)}.structure-path{grid-template-columns:repeat(2,1fr)}.structure-step:after{display:none}}
+    @media(max-width:720px){.shell{width:min(100% - 20px,1500px)}.topbar{padding:9px 10px}.brand span,.stamp{display:none}.nav button{padding:9px 11px;font-size:12px}.hero{padding:34px 24px;min-height:auto}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-grid{gap:32px}.hero-kpis{grid-template-columns:1fr 1fr}.hero-kpi.wide{grid-column:1/-1}.tree-wrap{padding:16px}.tree-stage{padding:16px;overflow:auto}.tree{min-width:820px}.tree-actions{min-width:820px}.tree-actions-grid{grid-template-columns:repeat(4,1fr)}.bug-grid,.bugs-top,.profile-groups,.profile-verdict,.structure-path,.structure-pair{grid-template-columns:1fr}.revenue-strip{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr}.flow-step{border-right:0;border-bottom:1px dashed #cbd3e2}.flow-step:after{display:none}.effect-row{grid-template-columns:130px 1fr 90px}.section-head{align-items:start;flex-direction:column}.source{flex-direction:column}.profile-hero{padding:28px 22px}.profile-hero h2{font-size:38px}.profile-kpis{grid-template-columns:1fr 1fr}.profile-decision{grid-template-columns:1fr}.profile-method{grid-template-columns:1fr}}
     @media(max-width:1100px){.standard-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:900px){.dokup-kpis{grid-template-columns:1fr 1fr}.dokup-callout{grid-template-columns:1fr}.dokup-head,.standard-head{flex-direction:column}.standard-total{text-align:left}}
+    @media(max-width:900px){.dokup-kpis{grid-template-columns:1fr 1fr}.dokup-callout{grid-template-columns:1fr}.dokup-head,.standard-head{flex-direction:column}.standard-total{text-align:left}.history-grid{grid-template-columns:1fr}.important-verdict{grid-template-columns:1fr}}
     @media(max-width:1100px){.initiative-summary{grid-template-columns:1fr}.flow{grid-template-columns:repeat(3,1fr)}.effect-head,.effect-row{grid-template-columns:180px 1fr 105px}.effect-head span:last-child{display:none}}
     @media(max-width:720px){.tree-actions{min-width:900px}.flow{grid-template-columns:1fr}.effect-head,.effect-row{grid-template-columns:130px 1fr 90px}}
     @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
@@ -58,11 +61,12 @@
     <header class="topbar">
       <div class="brand"><i class="brandmark"></i><span>RRE SS&amp;Sub&amp;LTR · H1 2026</span></div>
       <nav class="nav" aria-label="Разделы">
-        <button class="active" data-tab="map">Карта</button>
+        <button class="active" data-tab="map">Главное</button>
+        <button data-tab="structure">Разбивка</button>
         <button data-tab="dynamics">Динамика</button>
         <button data-tab="effect">Эффект</button>
         <button data-tab="profiles">Докупщики</button>
-        <button data-tab="bugs">Auto ППС</button>
+        <button data-tab="bugs">Почему не Авто</button>
       </nav>
       <span class="stamp">срез на 30.06.2026</span>
     </header>
@@ -70,33 +74,34 @@
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <span class="eyebrow">Тарифный контур и акции</span>
-          <h1>Ручные тарифы и акции RRE SS&amp;Sub&amp;LTR</h1>
+          <span class="eyebrow">RRE SS&amp;Sub&amp;LTR · H1 2026</span>
+          <h1>Ручные акции: сколько клиентов, зачем нужны и что автоматизировать</h1>
           <a class="hero-sheet-link" href="https://docs.google.com/spreadsheets/d/1zi6d_NXgrTCFl4i143FVHprpI7SUZ8f0Ildbq66ZlAE/edit" target="_blank" rel="noopener">Открыть все расчёты в Google Таблицах ↗</a>
         </div>
         <div class="hero-kpis">
-          <article class="hero-kpi"><span class="k-label">Активны 30 июня</span><div class="k-value count" data-value="6481">0</div><span class="k-sub">все тарифы SS&amp;Sub&amp;LTR</span></article>
-          <article class="hero-kpi"><span class="k-label">С активными акциями</span><div class="k-value count" data-value="4030">0</div><span class="k-sub">62,18% всего тарифного контура</span></article>
-          <article class="hero-kpi"><span class="k-label">Автоматизация акций</span><div class="k-value accent">41,64%</div><span class="k-sub">1 678 клиентов только с автоматизированными акциями</span></article>
+          <article class="hero-kpi"><span class="k-label">Всего клиентов с тарифом</span><div class="k-value count" data-value="6481">0</div><span class="k-sub">активны 30 июня</span></article>
+          <article class="hero-kpi"><span class="k-label">Из них участвуют в акциях</span><div class="k-value count" data-value="4030">0</div><span class="k-sub">62,18% всех клиентов с тарифом</span></article>
+          <article class="hero-kpi"><span class="k-label">Акции работают автоматически</span><div class="k-value accent">41,64%</div><span class="k-sub">1 678 из 4 030 клиентов с акциями</span></article>
         </div>
       </div>
     </section>
 
     <section id="map" class="tab active">
       <div class="section reveal">
-        <div class="section-head"><div><h2>Дерево тарифов и акций</h2><p>Сначала отделяем тарифы с акциями, затем внутри них — ручные и автоматизированные механики.</p></div><span class="pill">30 июня 2026</span></div>
+        <div class="section-head"><div><h2>От всех клиентов — к ручным акциям</h2><p>Нажмите на блок: сначала увидите клиентов с акциями, затем ручные и автоматические акции.</p></div><span class="pill">30 июня 2026</span></div>
         <div class="tree-wrap card">
-            <div class="tree-top"><h3>Все тарифы → участие в акциях → способ работы акции</h3><div class="legend"><span><i class="dot blue"></i>ручные акции</span><span><i class="dot mint"></i>автоматизированные акции</span></div></div>
+            <div class="tree-top"><h3>6 481 клиент → 4 030 с акциями → 2 352 с ручными акциями</h3><div class="legend"><span><i class="dot blue"></i>ручные</span><span><i class="dot mint"></i>автоматические</span></div></div>
           <div class="tree-layout">
             <div class="tree-stage">
+              <div class="tree-shortcut"><span><strong>Быстрый путь:</strong> все тарифы → с акциями → ручные → ППС manual</span><button id="ppsShortcut">Открыть ППС manual →</button></div>
               <div class="tree">
                 <div><button class="node root active" data-node="all"><span class="n-title">Все активные тарифы</span><span class="n-value">6 481</span><small>100% · 30.06</small></button></div>
-                <div class="connector"></div>
+                <div class="split-arrows root-split" aria-hidden="true"><span>↗</span><span>↘</span></div>
                 <div class="branch-col">
                   <button class="node manual" data-node="with-actions"><span class="n-title">С активными акциями</span><span class="n-value">4 030</span><small>62,18% всех тарифов</small></button>
                   <button class="node" data-node="without-actions"><span class="n-title">Без активных акций</span><span class="n-value">2 451</span><small>37,82% всех тарифов</small></button>
                 </div>
-                <div class="connector"></div>
+                <div class="split-arrows actions-split" aria-hidden="true"><span>↗</span><span>↘</span></div>
                 <div class="branch-col">
                   <button class="node manual" data-node="manual"><span class="n-title">Ручные акции</span><span class="n-value">2 352</span><small>58,36% клиентов с акциями</small></button>
                   <button class="node auto" data-node="automatic"><span class="n-title">Авто</span><span class="n-value">1 678</span><small>41,64% клиентов с акциями</small></button>
@@ -109,25 +114,63 @@
         </div>
       </div>
       <div class="section reveal">
-        <div class="section-head"><div><h2>Что ещё нужно доработать</h2><p>Три продуктовых сценария, без которых часть клиентских условий продолжит собираться вручную.</p></div><span class="pill">следующий контур развития</span></div>
+        <div class="section-head"><div><h2>Чего ещё не хватает продукту</h2><p>Пока этих трёх функций нет, часть акций приходится настраивать вручную.</p></div><span class="pill">следующие доработки</span></div>
         <div class="initiative-summary">
           <article class="summary-card card"><span>Непролонг</span><h3>Возврат через штраф</h3><p>Если клиент не продлил условия, система должна сама рассчитать последствие и вернуть его в стандартный сценарий без ручной корректировки.</p></article>
           <article class="summary-card card"><span>Гибкая цена</span><h3>Скидка на отдельную категорию</h3><p>Дать скидку только на выбранную категорию, не меняя условия всего тарифа клиента.</p></article>
-          <article class="summary-card card"><span>Совместимость</span><h3>Гибкий движок применения акций</h3><p>Заранее понимать, какие акции можно сочетать, в каком порядке их применять и какая из них важнее при конфликте.</p></article>
+          <article class="summary-card card"><span>Совместимость</span><h3>Понятные правила сочетания акций</h3><p>Система сама понимает, какие акции можно включить вместе и какая важнее при конфликте.</p></article>
         </div>
+      </div>
+    </section>
+
+    <section id="structure" class="tab">
+      <div class="section reveal">
+        <div class="section-head"><div><h2>Как сужается база до ППС manual</h2><p>Каждый следующий блок — часть предыдущего. Процент всегда считается от блока слева.</p></div><span class="pill">клиенты · 30 июня</span></div>
+        <div class="structure-path">
+          <article class="structure-step card"><span>Все клиенты с тарифом</span><strong>6 481</strong><small>100% базы</small></article>
+          <article class="structure-step card"><span>С активными акциями</span><strong>4 030</strong><small>62,18% от 6 481</small></article>
+          <article class="structure-step card"><span>С ручными акциями</span><strong>2 352</strong><small>58,36% от 4 030</small></article>
+          <article class="structure-step card"><span>ППС manual</span><strong>2 005</strong><small>85,25% от 2 352</small></article>
+        </div>
+
+        <div class="structure-subhead"><h3>Что находится внутри ППС manual</h3><p>Здесь две группы, вместе они дают 2 005 клиентов.</p></div>
+        <div class="structure-pair">
+          <article class="card"><span>Только ППС manual</span><strong>1 641</strong><p>81,85% от 2 005. Других активных акций нет.</p></article>
+          <article class="card"><span>ППС manual вместе с другими акциями</span><strong>364</strong><p>18,15% от 2 005. Например, вместе с «Лестницей» или региональной акцией.</p></article>
+        </div>
+
+        <div class="structure-subhead"><h3>Что находится внутри 1 641 клиента только с ППС manual</h3><p>Эти две группы не пересекаются.</p></div>
+        <div class="structure-pair">
+          <article class="card"><span>Были в Авто ППС, но пришлось вывести в ручной</span><strong>441</strong><p>26,87% от 1 641.</p></article>
+          <article class="card"><span>Стандартный тариф</span><strong>1 200</strong><p>73,13% от 1 641. Их разбираем ниже.</p></article>
+        </div>
+
+        <div class="structure-subhead"><h3>Что находится внутри 1 200 стандартных клиентов</h3><p>Четыре группы ниже не пересекаются и в сумме дают 1 200.</p></div>
+        <div class="structure-card card">
+          <table class="structure-table structure-simple">
+            <thead><tr><th>Группа</th><th>Клиенты</th><th>Доля от 1 200</th><th>Что это значит</th></tr></thead>
+            <tbody>
+              <tr class="ready"><td><strong>Готовы к Авто ППС</strong></td><td class="structure-metric">597</td><td>49,75%</td><td>Нет докупки и известной причины оставаться вручную</td></tr>
+              <tr class="hold"><td><strong>Докупщики</strong></td><td class="structure-metric">424</td><td>35,33%</td><td>322 обычных докупщика + 102 ранее выведенных из Авто ППС</td></tr>
+              <tr><td><strong>Выведены из Авто ППС без докупки</strong></td><td class="structure-metric">177</td><td>14,75%</td><td>Нужно разобрать причину ручного возврата</td></tr>
+              <tr><td><strong>Нужно уточнить</strong></td><td class="structure-metric">2</td><td>0,17%</td><td>Недостаточно данных для группы</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="caveat"><strong>Проверка суммы.</strong> 597 + 424 + 177 + 2 = 1 200. В этой последней таблице каждый клиент входит только в одну группу.</div>
       </div>
     </section>
 
     <section id="dynamics" class="tab">
       <div class="section">
-        <div class="section-head"><div><h2>Динамика автоматизации акций</h2><p>Уникальные клиенты с активными акциями на конец каждого месяца. Клиенты без акций в знаменатель не входят.</p></div><span class="pill">срез на конец месяца</span></div>
+        <div class="section-head"><div><h2>Сколько акций работает автоматически</h2><p>Считаем только клиентов с акциями. Клиенты без акций здесь не участвуют.</p></div><span class="pill">на конец каждого месяца</span></div>
         <div class="chart-grid">
           <article class="chart-card card">
-            <div class="chart-title"><div><h3>Ручные акции / Авто</h3><p>доля среди клиентов с активными акциями</p></div><div class="big-delta">+0,86 п.п. Авто</div></div>
+            <div class="chart-title"><div><h3>Ручные / Авто</h3><p>из всех клиентов с акциями</p></div><div class="big-delta">Авто: +0,86 процентного пункта</div></div>
             <div class="stack-list" id="stackList"></div>
           </article>
           <article class="chart-card card">
-            <div class="chart-title"><div><h3>Уровень автоматизации акций</h3><p>январь → июнь</p></div><span class="pill">40,78% → 41,64%</span></div>
+            <div class="chart-title"><div><h3>Доля Авто</h3><p>январь → июнь</p></div><span class="pill">40,78% → 41,64%</span></div>
             <svg class="line-chart" viewBox="0 0 560 280" aria-label="Динамика доли автоматизированных акций">
               <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f82f4" stop-opacity=".35"/><stop offset="1" stop-color="#4f82f4" stop-opacity="0"/></linearGradient></defs>
               <g><line class="gridline" x1="48" x2="540" y1="45" y2="45"/><line class="gridline" x1="48" x2="540" y1="115" y2="115"/><line class="gridline" x1="48" x2="540" y1="185" y2="185"/><text class="axistext" x="6" y="49">42%</text><text class="axistext" x="6" y="119">41%</text><text class="axistext" x="6" y="189">40%</text></g>
@@ -137,29 +180,29 @@
           </article>
         </div>
         <div class="heat-card card">
-          <div class="chart-title"><div><h3>Активные акции по месяцам</h3><p>Аналитика по активным акциям; актуальный срез — на конец июня.</p></div><span class="pill">уникальные клиенты внутри механики</span></div>
-          <table class="heat"><thead><tr><th>Механика</th><th>Янв</th><th>Фев</th><th>Мар</th><th>Апр</th><th>Май</th><th>Июн</th><th>Уникальные H1</th></tr></thead><tbody id="heatBody"></tbody></table>
+          <div class="chart-title"><div><h3>Сколько клиентов было в каждой акции</h3><p>Фактически активные клиенты на конец месяца.</p></div><span class="pill">один клиент может быть в нескольких акциях</span></div>
+          <table class="heat"><thead><tr><th>Акция</th><th>Янв</th><th>Фев</th><th>Мар</th><th>Апр</th><th>Май</th><th>Июн</th><th>За H1 хотя бы раз</th></tr></thead><tbody id="heatBody"></tbody></table>
         </div>
         <div class="section-head"><div><h2>Общая клиентская выручка</h2><p>Фактические месячные траты всех клиентов SS&amp;Sub&amp;LTR — независимо от ППС и участия в других акциях.</p></div><span class="pill">+20,3% январь → июнь</span></div>
         <div class="revenue-strip" id="revenueStrip"></div>
-        <div class="caveat"><strong>Откуда цифры.</strong> Для каждого месяца складываем <code>full_amount_without_vat_this_month</code> из <code>dma.report_asd_motivation</code> по клиентам пяти команд RRE. В январе факт трат есть у 5 781 клиента, в июне — у 6 371. Это общий месячный оборот клиентов с ППС и без ППС.</div>
+        <div class="caveat"><strong>Что это за выручка.</strong> Все траты клиентов пяти команд RRE за месяц — и с акциями, и без них. Поэтому эту выручку нельзя складывать с эффектом акций.</div>
       </div>
     </section>
 
     <section id="effect" class="tab">
       <div class="section">
-        <div class="section-head"><div><h2>Накопленный эффект акций за H1</h2><p>Все месяцы действия акций: новые подключения, продления и механики, начавшиеся до 2026 года.</p></div><span class="pill">matched H1 · январь–июнь</span></div>
+        <div class="section-head"><div><h2>Что дали акции за H1</h2><p>Учтены все месяцы работы: первое подключение, продления и акции, начавшиеся ещё в 2025 году.</p></div><span class="pill">сравнение с похожими клиентами</span></div>
         <div class="effect-hero">
-          <article class="effect-main card"><span class="eyebrow">Уникальный портфель</span><div class="big">+155,45 млн ₽</div><p>Оценка прироста общей клиентской выручки: фактические траты участников акций минус результат похожих клиентов в тех же месяцах H1.</p></article>
-          <div class="effect-side"><article class="mini card"><span class="k-label">Прирост тарифного объёма</span><strong>+370 808</strong><small>накопленно за январь–июнь</small></article><article class="mini card"><span class="k-label">Покрытие расчёта</span><strong>99,6%</strong><small>доля наблюдений, для которых нашлись похожие клиенты</small></article></div>
+          <article class="effect-main card"><span class="eyebrow">Главный результат</span><div class="big">+155,45 млн ₽</div><p>Столько дополнительной выручки оцениваем у клиентов с акциями по сравнению с похожими клиентами без этих акций.</p></article>
+          <div class="effect-side"><article class="mini card"><span class="k-label">Дополнительные объявления</span><strong>+370 808</strong><small>сумма прироста за шесть месяцев</small></article><article class="mini card"><span class="k-label">Удалось сравнить</span><strong>99,6%</strong><small>случаев — с похожими клиентами</small></article></div>
         </div>
         <div class="initiative-summary">
-          <article class="summary-card card"><span>Что вошло</span><h3>Каждый активный месяц</h3><p>Январь–июнь целиком: первое подключение, последующие продления и акции, которые начали работать ещё в 2025 году.</p></article>
-          <article class="summary-card card"><span>С чем сравниваем</span><h3>Похожие клиенты</h3><p>Тот же месяц, команда, сегмент и регион; близкие цена, тарифный объём и динамика общих трат за три предыдущих месяца.</p></article>
-          <article class="summary-card card"><span>Как учтены пересечения</span><h3>Уникальный портфель</h3><p>Если у клиента одновременно несколько акций, в общем результате он учитывается один раз за каждый месяц участия.</p></article>
+          <article class="summary-card card"><span>Что считаем</span><h3>Все шесть месяцев</h3><p>Включили подключения, продления и акции, начавшиеся до 2026 года.</p></article>
+          <article class="summary-card card"><span>С чем сравниваем</span><h3>С похожими клиентами</h3><p>Берём клиентов из похожего сегмента и региона с близкими тратами до акции.</p></article>
+          <article class="summary-card card"><span>Как убрали повторы</span><h3>Клиент считается один раз</h3><p>Если одновременно действуют несколько акций, в общем результате клиент за месяц не дублируется.</p></article>
         </div>
-        <div class="effect-list card"><div class="effect-head"><span>Механика</span><span>Масштаб эффекта</span><span>Δ общей выручки</span><span>Δ объёма</span></div><div id="effectList"></div></div>
-        <div class="caveat"><strong>Как читать цифру +155,45 млн ₽.</strong> Это оценка прироста общей клиентской выручки по 4 160 уникальным клиентам — с ППС и без ППС. Каждый клиент сравнивается с похожими отдельно в каждом месяце участия. Сезонность и рост похожих клиентов вычтены; июнь, продления и подключения 2025 года включены. Это аналитическая оценка, а не эксперимент.</div>
+        <div class="effect-list card"><div class="effect-head"><span>Акция</span><span>Размер эффекта</span><span>Выручка</span><span>Объявления</span></div><div id="effectList"></div></div>
+        <div class="caveat"><strong>Важно.</strong> +155,45 млн ₽ — оценка, а не результат эксперимента. Мы сравнили 4 160 клиентов с акциями с похожими клиентами без них и учли разницу их роста по месяцам.</div>
       </div>
     </section>
 
@@ -168,57 +211,96 @@
         <div class="profile-hero">
           <div class="profile-hero-grid">
             <div>
-              <span class="eyebrow">ППС manual · ручная докупка</span>
-              <h2>Привлечение новых профилей есть, но риск каннибализации тоже реальный</h2>
-              <p>Проверили 187 профилей, которые в H1 присоединились к иерархиям ручных докупщиков. Смотрели их платежи и RRE‑контент за 180 дней до присоединения и поведение после.</p>
+              <span class="eyebrow">ППС manual · докупка</span>
+              <h2>Докупщики: динамика клиентов и связанные профили</h2>
+              <p>Сначала показываем выручку и объявления всех 566 докупщиков. Затем отдельно разбираем 187 профилей агентов и продавцов, которые в H1 появились в структурах крупных клиентов.</p>
             </div>
             <div class="profile-kpis">
-              <article class="profile-kpi"><span>Проверено</span><strong>187</strong><small>новых связей H1</small></article>
-              <article class="profile-kpi"><span>Привлечение / монетизация</span><strong>89</strong><small>72 новых с контентом + 17 бесплатных</small></article>
-              <article class="profile-kpi"><span>Сильный риск</span><strong>56</strong><small>были траты и RRE‑контент</small></article>
-              <article class="profile-kpi"><span>Смешанный канал</span><strong>136</strong><small>платили профиль и головной клиент</small></article>
+              <article class="profile-kpi"><span>Пользовались в H1</span><strong>566</strong><small>уникальных докупщиков</small></article>
+              <article class="profile-kpi"><span>Активны в июне</span><strong>323</strong><small>докупщика</small></article>
+              <article class="profile-kpi"><span>Связанные профили</span><strong>187</strong><small>аккаунты агентов и продавцов, появившиеся в структурах крупных клиентов в H1</small></article>
+              <article class="profile-kpi"><span>Что было до связи</span><strong>108 / 79</strong><small>108 уже платили или размещались · 79 раньше не проявлялись</small></article>
             </div>
           </div>
         </div>
       </div>
 
       <div class="section reveal">
-        <div class="section-head"><div><h2>Кто присоединился к докупщикам</h2><p>Три взаимоисключающие группы по истории профиля до присоединения.</p></div><span class="pill">187 уникальных профилей</span></div>
+        <div class="section-head"><div><h2>Что дала докупка за H1</h2><p>Сравнили докупщиков с похожими клиентами без докупки.</p></div><span class="pill">для 94,5% случаев нашли сравнение</span></div>
+        <section class="dokup-effect">
+          <div class="dokup-head"><div><h4>566 докупщиков пользовались акцией хотя бы один месяц</h4><p>Для каждого месяца нашли похожих клиентов без докупки и сравнили, как изменились их траты и объявления.</p></div><span class="dokup-badge">323 активны в июне</span></div>
+          <div class="dokup-kpis">
+            <article class="dokup-kpi"><span>Дополнительная выручка</span><strong>+28,86 млн ₽</strong><small>относительно похожих клиентов</small></article>
+            <article class="dokup-kpi"><span>Дополнительные объявления</span><strong>+45 135</strong><small>сумма прироста за шесть месяцев</small></article>
+            <article class="dokup-kpi"><span>Больше уникальных объявлений у нас</span><strong>+5,67 процентного пункта</strong><small>по сравнению с Cian и Домклик у тех же продавцов</small></article>
+            <article class="dokup-kpi"><span>Вклад в долю рынка</span><strong>+0,218 процентного пункта</strong><small>оценка от дополнительных объявлений</small></article>
+          </div>
+          <div class="dokup-table-wrap"><table class="dokup-table"><thead><tr><th>Месяц</th><th>Докупщики</th><th>Дополнительная выручка</th><th>Дополнительные объявления</th></tr></thead><tbody>
+            <tr><td><strong>Январь</strong></td><td>327</td><td class="dokup-positive">+1,01 млн ₽</td><td class="dokup-positive">+3 148</td></tr>
+            <tr><td><strong>Февраль</strong></td><td>328</td><td class="dokup-positive">+3,60 млн ₽</td><td class="dokup-positive">+7 451</td></tr>
+            <tr><td><strong>Март</strong></td><td>370</td><td class="dokup-positive">+6,09 млн ₽</td><td class="dokup-positive">+11 533</td></tr>
+            <tr><td><strong>Апрель</strong></td><td>334</td><td class="dokup-positive">+8,66 млн ₽</td><td class="dokup-positive">+10 309</td></tr>
+            <tr><td><strong>Май</strong></td><td>335</td><td class="dokup-positive">+4,84 млн ₽</td><td class="dokup-positive">+7 298</td></tr>
+            <tr><td><strong>Июнь</strong></td><td>323</td><td class="dokup-positive">+4,66 млн ₽</td><td class="dokup-positive">+5 396</td></tr>
+          </tbody></table></div>
+          <div class="dokup-method"><strong>Важно.</strong> Рост есть, но это ещё не означает, что льготная докупка выгодна. Из результата нужно вычесть деньги, которые клиент раньше мог платить напрямую.</div>
+        </section>
+      </div>
+
+      <div class="section reveal">
+        <div class="section-head"><div><h2>Как менялись все 566 докупщиков</h2><p>Берём один и тот же список клиентов, которые хотя бы раз пользовались докупкой в H1, и показываем их фактические траты и объявления по месяцам.</p></div><span class="pill">те же 566 клиентов</span></div>
+        <div class="history-grid">
+          <article class="history-card card"><h3>Выручка, млн ₽ в месяц</h3><p>Все траты одного и того же списка из 566 клиентов.</p><div class="history-bars" aria-label="Динамика выручки всех 566 докупщиков">
+            <span class="history-col" style="--h:87%"><i></i><b>50,2</b><small>Июл</small></span><span class="history-col" style="--h:85%"><i></i><b>48,8</b><small>Авг</small></span><span class="history-col" style="--h:85%"><i></i><b>49,4</b><small>Сен</small></span><span class="history-col" style="--h:90%"><i></i><b>51,9</b><small>Окт</small></span><span class="history-col" style="--h:85%"><i></i><b>49,3</b><small>Ноя</small></span><span class="history-col" style="--h:81%"><i></i><b>46,7</b><small>Дек</small></span>
+            <span class="history-col h1" style="--h:81%"><i></i><b>46,6</b><small>Янв</small></span><span class="history-col h1" style="--h:74%"><i></i><b>42,9</b><small>Фев</small></span><span class="history-col h1" style="--h:86%"><i></i><b>49,6</b><small>Мар</small></span><span class="history-col h1" style="--h:93%"><i></i><b>53,8</b><small>Апр</small></span><span class="history-col h1" style="--h:98%"><i></i><b>56,6</b><small>Май</small></span><span class="history-col h1" style="--h:100%"><i></i><b>57,8</b><small>Июн</small></span>
+          </div><div class="history-summary"><div><span>Июль–декабрь 2025</span><strong>296,31 млн ₽</strong></div><div><span>Январь–июнь 2026</span><strong>307,31 млн ₽ · +3,7%</strong></div></div></article>
+          <article class="history-card card"><h3>Объявления недвижимости по месяцам</h3><p>Активные объявления того же списка из 566 клиентов.</p><div class="history-bars" aria-label="Динамика объявлений всех 566 докупщиков">
+            <span class="history-col" style="--h:100%"><i></i><b>76,6</b><small>Июл</small></span><span class="history-col" style="--h:97%"><i></i><b>74,3</b><small>Авг</small></span><span class="history-col" style="--h:96%"><i></i><b>73,9</b><small>Сен</small></span><span class="history-col" style="--h:97%"><i></i><b>74,3</b><small>Окт</small></span><span class="history-col" style="--h:90%"><i></i><b>69,2</b><small>Ноя</small></span><span class="history-col" style="--h:83%"><i></i><b>63,7</b><small>Дек</small></span>
+            <span class="history-col h1" style="--h:75%"><i></i><b>57,7</b><small>Янв</small></span><span class="history-col h1" style="--h:77%"><i></i><b>59,2</b><small>Фев</small></span><span class="history-col h1" style="--h:82%"><i></i><b>63,1</b><small>Мар</small></span><span class="history-col h1" style="--h:87%"><i></i><b>66,5</b><small>Апр</small></span><span class="history-col h1" style="--h:87%"><i></i><b>66,8</b><small>Май</small></span><span class="history-col h1" style="--h:87%"><i></i><b>66,9</b><small>Июн</small></span>
+          </div><div class="history-summary"><div><span>Июль–декабрь 2025</span><strong>432 015</strong></div><div><span>Январь–июнь 2026</span><strong>380 275 · −12,0%</strong></div></div></article>
+        </div>
+        <div class="caveat"><strong>Как это читать.</strong> H1 к H2’25: выручка +3,7%, объявления −12,0%. Внутри H1, с января по июнь: выручка +24,1%, объявления +16,0%. Это динамика тех же 566 клиентов, а не эффект докупки: сезонность и другие изменения здесь не вычтены. Поэтому −12,0% не противоречит оценке +45 135 объявлений выше: там докупщиков сравниваем с похожими клиентами в те же месяцы. В июле данные найдены для 562 из 566 клиентов, с октября — для всех.</div>
+      </div>
+
+      <div class="section reveal">
+        <div class="section-head"><div><h2>Что такое связанные профили и откуда взялись 108</h2><p>Это отдельное исследование не докупщиков, а аккаунтов агентов и продавцов, которых крупные клиенты присоединили к своей структуре.</p></div><span class="pill">отдельно от 566 докупщиков</span></div>
+        <div class="profile-method card">
+          <div><strong>1. Кто присоединяет</strong><span>177 крупных клиентов-докупщиков, активных в июне, имеют собственную структуру агентов.</span></div>
+          <div><strong>2. Кого присоединяют</strong><span>Отдельные профили агентов или продавцов. Всего в этих структурах было 1 176 связанных профилей.</span></div>
+          <div><strong>3. Куда присоединяют</strong><span>В структуру крупного клиента. Сама запись о связи ещё не доказывает, что способ оплаты профиля изменился.</span></div>
+          <div><strong>4. Что проверили</strong><span>187 профилей впервые появились в этих структурах в H1. Мы посмотрели, были ли у них траты или объявления раньше.</span></div>
+        </div>
         <div class="profile-groups">
-          <article class="profile-group card"><span>Вероятно новый профиль</span><strong>79 · 42,2%</strong><p>До присоединения не было ни трат, ни RRE‑контента. У 72 профилей после появился контент.</p></article>
-          <article class="profile-group free card"><span>Существующий бесплатный продавец</span><strong>17 · 9,1%</strong><p>RRE‑контент уже был, но оплаты не было. После присоединения все 17 продолжили размещаться.</p></article>
-          <article class="profile-group risk card"><span>Платил до присоединения</span><strong>91 · 48,7%</strong><p>56 профилей уже платили и размещали RRE‑контент; ещё 35 платили, но до связи не имели RRE‑контента.</p></article>
+          <article class="profile-group risk card"><span>Профили уже существовали</span><strong>108 · 57,8% исследованных</strong><p><b>Связаны с 64 докупщиками — 11,3% от всех 566.</b><br>До появления связи профиль уже платил или размещал объявления.</p></article>
+          <article class="profile-group not-hunted card"><span>Похожи на действительно новых</span><strong>79 · 42,2% исследованных</strong><p><b>Связаны с 47 докупщиками — 8,3% от всех 566.</b><br>До присоединения мы не нашли ни трат, ни объявлений недвижимости.</p></article>
         </div>
-        <div class="profile-share" aria-label="Распределение присоединённых профилей"><span style="width:42.2%" title="Вероятно новые: 42,2%"></span><span style="width:9.1%" title="Бесплатные продавцы: 9,1%"></span><span style="width:48.7%" title="Платили до присоединения: 48,7%"></span></div>
+        <div class="profile-share" aria-label="Распределение присоединённых профилей"><span style="width:57.8%;background:var(--orange)" title="Существовали раньше: 57,8%"></span><span style="width:42.2%;background:var(--mint)" title="Раньше не проявлялись: 42,2%"></span></div>
+        <div class="caveat"><strong>Охват исследования.</strong> Все 187 профилей связаны с 89 докупщиками — это 15,7% от общей базы 566. Доли 11,3% и 8,3% нельзя складывать: у одного докупщика могли появиться профили обеих групп. Профиль остаётся отдельным аккаунтом; кто инициировал связь и изменился ли способ оплаты, расчёт не показывает.</div>
       </div>
 
       <div class="section reveal">
-        <div class="section-head"><div><h2>Что это означает для бизнеса</h2><p>Механика одновременно расширяет предложение и создаёт риск перетока прямого канала.</p></div><span class="pill">управленческий вывод</span></div>
+        <div class="section-head"><div><h2>Что можно утверждать по данным</h2><p>Отделяем измеренные факты от вопросов, на которые текущего расчёта пока недостаточно.</p></div><span class="pill">без предположений</span></div>
         <div class="profile-verdict">
-          <article class="card"><span class="eyebrow">Положительный сигнал</span><h3>89 профилей с признаками привлечения или монетизации</h3><p>72 вероятно новых профиля начали размещать RRE‑контент после присоединения. Ещё 17 уже размещались бесплатно и были подключены к платной модели через партнёра.</p></article>
-          <article class="card"><span class="eyebrow">Риск канала</span><h3>56 сильных кандидатов на каннибализацию</h3><p>Эти профили уже платили и размещали RRE‑контент напрямую. До подключения нужно проверять, не теряем ли мы прямую маржу и не переносим ли существующую выручку под льготный канал.</p></article>
-        </div>
-        <div class="profile-decision">
-          <div><h3>Решение: оставить докупку, но разделить два маршрута</h3><p>Новым и бесплатным профилям — автоматическое подключение. Ранее платившим — проверка прямой выручки и защита от каннибализации до присоединения.</p></div>
-          <a class="profile-download" href="https://docs.google.com/spreadsheets/d/1zi6d_NXgrTCFl4i143FVHprpI7SUZ8f0Ildbq66ZlAE/edit" target="_blank" rel="noopener">Открыть расчёты в Google Таблицах ↗</a>
+          <article class="card"><span class="eyebrow">Что видно по всем докупщикам</span><h3>Выручка растёт, объявления зависят от периода</h3><p>У тех же 566 клиентов H1 выше H2’25 по выручке на 3,7%, но ниже по объявлениям на 12,0%. Внутри H1 оба показателя растут от января к июню.</p></article>
+          <article class="card"><span class="eyebrow">Что пока не доказано</span><h3>Связь с агентством не равна потере выручки</h3><p>108 профилей проявлялись до появления связи, но из этого ещё нельзя сделать вывод, что они сменили способ оплаты или что мы потеряли деньги.</p></article>
         </div>
       </div>
 
       <div class="section reveal">
-        <div class="section-head"><div><h2>Как проверяли</h2><p>Расчёт можно воспроизвести на уровне каждого из 187 профилей.</p></div><span class="pill">окно до: 180 дней</span></div>
+        <div class="section-head"><div><h2>Как проверяли</h2><p>Для каждого из 187 профилей посмотрели историю до и после присоединения.</p></div><span class="pill">180 дней до</span></div>
         <div class="profile-method card">
           <div><strong>1. Траты до</strong><span>Любая платная активность профиля Avito за 180 дней до появления связи.</span></div>
-          <div><strong>2. RRE‑контент до</strong><span>Были ли объявления недвижимости до присоединения к головному клиенту.</span></div>
-          <div><strong>3. Поведение после</strong><span>Проверяем контент и оплату профиля после присоединения до 30 июня.</span></div>
-          <div><strong>4. Головной клиент</strong><span>Отдельно смотрим, продолжал ли платить головной клиент в тот же период.</span></div>
+          <div><strong>2. Объявления до</strong><span>Были ли объявления недвижимости до присоединения.</span></div>
+          <div><strong>3. Поведение после</strong><span>Проверяем объявления и оплату профиля после присоединения до 30 июня.</span></div>
+          <div><strong>4. Оплата агентства</strong><span>Проверяем, платило ли крупное агентство после присоединения профиля.</span></div>
         </div>
-        <div class="caveat"><strong>Ограничение.</strong> Оплаты профиля пока включают любую платную активность Avito, а не только RRE‑продукты. 136 случаев смешанного канала означают параллельную оплату профиля и головного клиента, но не доказывают двойную оплату одного объявления. Окна после присоединения имеют разную длину.</div>
+        <div class="caveat"><strong>Ограничение.</strong> В выручке профиля сейчас видны все его платежи в Avito, а не только недвижимость. Чтобы проверить возможную каннибализацию, нужно отдельно сравнить оплату профиля и головного клиента до и после появления связи.</div>
       </div>
     </section>
 
     <section id="bugs" class="tab">
       <div class="section">
-        <div class="section-head"><div><h2>Почему пока нельзя всех перевести на Auto ППС</h2><p>В некоторых ситуациях система неверно считает условия или не применяет скидку. Тогда человеку приходится проверять и исправлять всё вручную.</p></div><span class="pill">8 обращений за H1</span></div>
+        <div class="section-head"><div><h2>Почему пока нельзя всех перевести на Авто ППС</h2><p>В некоторых ситуациях система неверно считает условия или не применяет скидку. Тогда человеку приходится проверять и исправлять всё вручную.</p></div><span class="pill">8 обращений за H1</span></div>
         <div class="bugs-top"><article class="bug-kpi card"><strong>3</strong><span>случая, когда система действительно не сработала</span></article><article class="bug-kpi card"><strong>4</strong><span>случая, когда система сработала по правилу, но правило оказалось непонятным</span></article><article class="bug-kpi card"><strong>1</strong><span>случай, который пока не удалось объяснить до конца</span></article><article class="bug-kpi card"><strong>4</strong><span>главные причины, почему нужен ручной контроль</span></article></div>
         <div class="bug-grid">
           <article class="bug card"><span class="bug-num">01</span><span class="pill">неверный подсчёт</span><h3>Бесплатное считается как платное</h3><p>Клиент получил бесплатные размещения, а система решила, что он их купил. Поэтому в следующий раз она просит от него слишком большой рост.</p></article>
@@ -226,15 +308,15 @@
           <article class="bug card"><span class="bug-num">03</span><span class="pill">важен порядок</span><h3>Клиент сделал действие слишком рано</h3><p>Если клиент оплатил или продлил тариф до того, как система включила правило, его действие может не засчитаться.</p></article>
           <article class="bug card"><span class="bug-num">04</span><span class="pill">нет одного окна</span><h3>Исправления делаются в разных местах</h3><p>Один человек проверяет условия, другой меняет тариф, третий следит за сроком. Нет одного понятного места, где видно весь путь клиента.</p></article>
         </div>
-        <div class="section-head"><div><h2>Зачем бизнесу нужны ручники</h2><p>Ручной контур сейчас компенсирует продуктовые ограничения, но сам по себе не является бизнес-целью.</p></div><span class="pill">управленческий вывод</span></div>
+        <div class="section-head"><div><h2>Зачем пока нужна ручная работа</h2><p>Она страхует клиента, когда система ещё не умеет правильно обработать его случай.</p></div><span class="pill">зачем сохраняем</span></div>
         <div class="initiative-summary">
           <article class="summary-card card"><span>Зачем сохраняем сейчас</span><h3>Не терять деньги и объявления</h3><p>Ручные условия помогают сохранить клиента, когда обычное правило ему не подходит или система пока не умеет правильно посчитать скидку.</p></article>
           <article class="summary-card card"><span>Чего добиваемся</span><h3>Дать подходящее предложение</h3><p>Меняем цену, количество объявлений, бонус или срок так, чтобы клиент продолжил платить и размещать больше объявлений.</p></article>
-          <article class="summary-card card"><span>Почему просим автоматизацию</span><h3>Сохранить пользу, убрать ручную работу</h3><p>Хотим, чтобы одинаковые случаи решались одинаково, скидка не терялась, а временные условия сами заканчивались в нужный день.</p></article>
+          <article class="summary-card card"><span>Зачем автоматизируем</span><h3>Сохранить пользу, убрать ручную работу</h3><p>Одинаковые случаи должны решаться одинаково, скидка не должна теряться, а временные условия должны сами заканчиваться.</p></article>
         </div>
-        <div class="section-head"><div><h2>Как должен работать понятный автоматический процесс</h2><p>Система сама проверяет условия, применяет скидку и вовремя возвращает клиента к обычным правилам.</p></div><span class="pill">целевая схема</span></div>
+        <div class="section-head"><div><h2>Как должно работать Авто</h2><p>Система сама проверяет условия, применяет скидку и вовремя возвращает обычные правила.</p></div><span class="pill">как должно быть</span></div>
         <div class="flow card"><div class="flow-step"><strong>1. Правильно посчитать</strong><span>Не смешивать бесплатные и оплаченные размещения</span></div><div class="flow-step"><strong>2. Проверить правила</strong><span>Понять, подходит ли акция и можно ли сочетать её с другими</span></div><div class="flow-step"><strong>3. Показать результат заранее</strong><span>До запуска показать будущую цену, скидку и причину отказа</span></div><div class="flow-step"><strong>4. Убедиться, что скидка сработала</strong><span>Проверить итоговую цену и повторить расчёт, если что-то не дошло</span></div><div class="flow-step"><strong>5. Вовремя закончить</strong><span>После окончания акции убрать временные условия и вернуть обычный тариф</span></div></div>
-        <div class="section-head"><div><h2>Что нужно сделать</h2><p>Сначала исправляем самые опасные ошибки, затем упрощаем запуск и контроль акций.</p></div><span class="pill">список работ</span></div>
+        <div class="section-head"><div><h2>Что делаем по порядку</h2><p>Сначала убираем ошибки с деньгами, затем упрощаем запуск и контроль акций.</p></div><span class="pill">план работ</span></div>
         <div class="initiatives card">
           <table class="initiative-table">
             <thead><tr><th>Очередь</th><th>Что делаем</th><th>Для каких акций</th><th>Как это будет работать</th><th>Что получим</th></tr></thead>
@@ -243,16 +325,16 @@
               <tr><td><span class="priority">Сначала</span></td><td><strong>Проверять итоговую скидку</strong></td><td>ППС manual, повышение цен, бонусы</td><td>После расчёта система проверяет цену и сама повторяет шаг, если скидка не появилась.</td><td>Меньше ошибок и ручных перезапусков.</td></tr>
               <tr><td><span class="priority">Далее</span></td><td><strong>Показывать условия до запуска</strong></td><td>ППС, лестница, повышение цен</td><td>Менеджер заранее видит будущую цену, скидку и возможную проблему.</td><td>Меньше неверно запущенных акций.</td></tr>
               <tr><td><span class="priority">Далее</span></td><td><strong>Собрать правила акций в одном месте</strong></td><td>Лестница, регионы, элитка, 0+5, SUB</td><td>В одном месте хранятся условия входа, сочетания акций и допустимые скидки.</td><td>Акции можно запускать массово, без ручной сборки.</td></tr>
-              <tr><td><span class="priority">Далее</span></td><td><strong>Автоматически завершать временные условия</strong></td><td>Все временные ручные сценарии</td><td>Система помнит срок акции и сама возвращает обычные условия.</td><td>Не остаётся забытых ручников.</td></tr>
+              <tr><td><span class="priority">Далее</span></td><td><strong>Автоматически завершать временные условия</strong></td><td>Все временные ручные акции</td><td>Система помнит срок акции и сама возвращает обычные условия.</td><td>Не остаётся забытых ручных настроек.</td></tr>
               <tr><td><span class="priority">После</span></td><td><strong>Сделать шаблоны специальных предложений</strong></td><td>Спец.Оффер, Крым, КС, регионы</td><td>Менеджер выбирает готовый вариант вместо сборки условий с нуля.</td><td>Быстрее запуск и меньше случайных ошибок.</td></tr>
-              <tr><td><span class="priority">После</span></td><td><strong>Показывать результат каждой акции</strong></td><td>Все акции</td><td>В одном отчёте видны клиенты, сроки, ошибки, выручка и контент.</td><td>Понятно, какую механику автоматизировать следующей.</td></tr>
+              <tr><td><span class="priority">После</span></td><td><strong>Показывать результат каждой акции</strong></td><td>Все акции</td><td>В одном отчёте видны клиенты, сроки, ошибки, выручка и объявления.</td><td>Понятно, какую акцию автоматизировать следующей.</td></tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <footer class="source"><span>Контур: Re MASD, Re Фармеры 1 KAM, Re Фармеры 2, Re Фармеры 4, Re Фармеры 5.</span><span>Источники: dma.re_tariff_info · dma.re_tariff_tag_info · dma.report_asd_motivation · Mattermost #chubaka</span></footer>
+    <footer class="source"><span>Команды: Re MASD, Re Фармеры 1 KAM, Re Фармеры 2, Re Фармеры 4, Re Фармеры 5.</span><span>Источники: dma.re_tariff_info · dma.re_tariff_loyalty_info · dma.realty_market_seller_content · dma.re_seller_user_segment_market · Mattermost #chubaka</span></footer>
   </main>
 
   <div class="tooltip" id="tooltip"></div>
@@ -268,24 +350,24 @@
       {m:'Июн',total:6481,withActions:4030,manual:2352,auto:1678,autoShare:41.64,revenue:620.6}
     ];
     const mechanics=[
-      {id:'pps-manual',name:'ППС manual',active:2005,h1:2199,color:'#2563eb',goal:'Удерживать и наращивать тарифную выручку там, где стандартная логика Auto ППС не покрывает клиентский сценарий.',why:'Индивидуальные пороги, переходы после бесплатного контента, докупки и сбои доставки скидки требуют ручного управления.',auto:'Pre-check, единый движок исключений и автоматический возврат после закрытия 90-дневного окна.',rev:110.115,content:8534,closed:11157},
-      {id:'pps-auto',name:'ППС auto',active:1819,h1:1967,color:'#17b890',goal:'Масштабируемо удерживать бюджет и контент через скидку за подтверждённый рост.',why:'Это автоматическая механика; ручной обход появляется при ошибке данных, доставки скидки или переходном сценарии.',auto:'Сквозной контроль тег → pricing-сегмент → тариф и объяснимый pre-check.',rev:77.849,content:3452,closed:9930},
-      {id:'ladder',name:'Лестница',active:307,h1:338,color:'#7c5cff',goal:'Поддержать целевой апсейл, закрепить VAS-бюджет и увеличить share of wallet.',why:'Комбинация целевого оффера и ППС не собирается единым автоматическим правилом.',auto:'Формализовать eligibility, ступени и совместимость механик в промодвижке.',rev:109.899,content:4884,closed:1736},
-      {id:'price',name:'Повышение цен ППС',active:160,h1:180,color:'#ff7a45',goal:'Смягчить индексацию, сохранить клиента, бюджет и контент.',why:'Компенсация зависит от конкретного повышения цены и клиентского кейса.',auto:'Матрица компенсации от индексации и сегмента с автоматическим сроком действия.',rev:2.54,content:-387,closed:243},
-      {id:'special',name:'Спец.Оффер',active:60,h1:63,color:'#ef5da8',goal:'Удержать или развить отдельного стратегического клиента целевым предложением.',why:'Условия индивидуальны и требуют согласования.',auto:'Каталог шаблонов, лимиты полномочий и автоматический expiry.',rev:.75,content:-22,closed:29},
-      {id:'regions',name:'Поддержка регионов',active:43,h1:47,color:'#18a0ae',goal:'Сохранить предложение в регионах с отличающейся экономикой.',why:'Список регионов и условия поддержки задаются отдельным решением.',auto:'Версионируемый eligibility и автоматическая региональная ступень.',rev:.22,content:77,closed:31},
-      {id:'elite',name:'Элитка',active:35,h1:42,color:'#d89b22',goal:'Развивать специальный сегмент элитного жилья и выручку на контенте.',why:'Узкий сегмент и индивидуальная настройка состава предложения.',auto:'Формальный сегмент, стандартные пакеты и автоназначение.',rev:-.15,content:67,closed:30},
-      {id:'crimea',name:'Крым · спецоффер',active:76,h1:85,color:'#8a94a6',goal:'Сохранить и развить контент в регионе с отдельной экономикой предложения.',why:'Региональный спецоффер задаётся отдельным тегом и требует ручного контроля условий.',auto:'Перевести регион в версионируемое eligibility-правило со сроком действия.',rev:null,content:null,closed:0},
-      {id:'zero5',name:'0+5',active:15,h1:15,color:'#8a94a6',goal:'Привлечь дополнительный контент через целевой спецоффер.',why:'Legacy-механика назначается и снимается вручную.',auto:'Свести в стандартный шаблон акции с автоматическим входом и выходом.',rev:.062,content:3,closed:5},
-      {id:'sub-ruble',name:'SUB по рублю',active:21,h1:24,color:'#8a94a6',goal:'Поддержать подключение специального SUB-предложения.',why:'Условия живут в отдельном ручном теге.',auto:'Формализовать eligibility и жизненный цикл предложения.',rev:null,content:null,closed:0},
-      {id:'bonus-promo',name:'Бонусы на продвижение',active:16,h1:20,color:'#8a94a6',goal:'Активировать VAS и будущий платный spend бонусной механикой.',why:'Выдача и контроль бонуса не собраны в единый автоматический сценарий.',auto:'Автовыдача по правилу, срок действия и контроль использования.',rev:null,content:null,closed:0},
-      {id:'special-ks',name:'Спец оффер КС',active:15,h1:16,color:'#8a94a6',goal:'Закрыть целевой клиентский сценарий специальными условиями.',why:'Индивидуальные параметры требуют ручного согласования.',auto:'Каталог шаблонов и автоматический expiry.',rev:null,content:null,closed:0},
-      {id:'ltr',name:'LTR · спецоффер',active:6,h1:6,color:'#8a94a6',goal:'Поддержать специальные условия для LTR-клиентов.',why:'Условия назначаются отдельным ручным тегом.',auto:'Формализовать правила входа, срок действия и автоматическое завершение.',rev:null,content:null,closed:0},
-      {id:'try',name:'Try&Buy',active:9,h1:10,color:'#8a94a6',goal:'Снизить барьер входа и конвертировать тест в платный бюджет.',why:'Срок теста и переход в платный тариф управляются вручную.',auto:'Автоматический eligibility, срок пилота и конверсия.',rev:1.298,content:208,closed:185}
+      {id:'pps-manual',name:'ППС manual',active:2005,h1:2199,color:'#2563eb',goal:'Сохранить клиента и его траты, когда обычный Auto ППС не подходит.',why:'Нестандартная цена, бесплатные объявления, докупка или ошибка скидки требуют проверки человеком.',auto:'До запуска показывать будущую цену, проверять скидку и автоматически возвращать обычные условия.',rev:110.115,content:8534,closed:11157},
+      {id:'pps-auto',name:'Авто ППС',active:1819,h1:1967,color:'#17b890',goal:'Давать скидку за рост без ручной настройки.',why:'Работает автоматически. Человек подключается только при ошибке или нестандартном переходе.',auto:'Система сама проверяет условия, применяет скидку и показывает причину отказа.',rev:77.849,content:3452,closed:9930},
+      {id:'ladder',name:'Лестница',active:307,h1:338,color:'#7c5cff',goal:'Постепенно увеличить число объявлений и траты клиента.',why:'Шаги роста и сочетание с ППС пока настраиваются отдельно.',auto:'Задать готовые ступени роста и правила сочетания с другими акциями.',rev:109.899,content:4884,closed:1736},
+      {id:'price',name:'Повышение цен ППС',active:160,h1:180,color:'#ff7a45',goal:'Смягчить повышение цены и не потерять клиента.',why:'Размер поддержки зависит от конкретного повышения и клиента.',auto:'Заранее задать размер и срок скидки для каждого уровня повышения.',rev:2.54,content:-387,closed:243},
+      {id:'special',name:'Спец.Оффер',active:60,h1:63,color:'#ef5da8',goal:'Удержать или развить важного клиента специальными условиями.',why:'Условия индивидуальны и требуют согласования.',auto:'Сделать набор готовых предложений с лимитами и сроком окончания.',rev:.75,content:-22,closed:29},
+      {id:'regions',name:'Поддержка регионов',active:43,h1:47,color:'#18a0ae',goal:'Сохранить клиентов и объявления в отдельных регионах.',why:'Список регионов и условия поддержки задаются вручную.',auto:'Хранить правила по регионам и включать поддержку автоматически.',rev:.22,content:77,closed:31},
+      {id:'elite',name:'Элитка',active:35,h1:42,color:'#d89b22',goal:'Развивать сегмент элитного жилья.',why:'Для сегмента нужны отдельные условия и состав предложения.',auto:'Задать стандартные пакеты и включать их автоматически.',rev:-.15,content:67,closed:30},
+      {id:'crimea',name:'Крым · спецоффер',active:76,h1:85,color:'#8a94a6',goal:'Сохранить объявления в регионе с особыми условиями.',why:'Предложение включается отдельно и требует ручной проверки.',auto:'Задать понятное правило входа и дату окончания.',rev:null,content:null,closed:0},
+      {id:'zero5',name:'0+5',active:15,h1:15,color:'#8a94a6',goal:'Привлечь дополнительные объявления специальным предложением.',why:'Акция включается и выключается вручную.',auto:'Сделать готовый шаблон с автоматическим началом и окончанием.',rev:.062,content:3,closed:5},
+      {id:'sub-ruble',name:'SUB по рублю',active:21,h1:24,color:'#8a94a6',goal:'Подключить клиента к специальному SUB-предложению.',why:'Условия хранятся в отдельной ручной отметке.',auto:'Задать понятные правила входа и автоматическое окончание.',rev:null,content:null,closed:0},
+      {id:'bonus-promo',name:'Бонусы на продвижение',active:16,h1:20,color:'#8a94a6',goal:'Дать клиенту попробовать продвижение и увеличить будущие траты.',why:'Бонус выдаётся и контролируется вручную.',auto:'Выдавать бонус по правилу и автоматически следить за сроком.',rev:null,content:null,closed:0},
+      {id:'special-ks',name:'Спец оффер КС',active:15,h1:16,color:'#8a94a6',goal:'Дать отдельному клиенту специальные условия.',why:'Параметры согласовываются вручную.',auto:'Сделать готовые варианты со сроком окончания.',rev:null,content:null,closed:0},
+      {id:'ltr',name:'LTR · спецоффер',active:6,h1:6,color:'#8a94a6',goal:'Поддержать специальные условия для LTR-клиентов.',why:'Условия включаются отдельной ручной отметкой.',auto:'Задать правила входа и автоматическое окончание.',rev:null,content:null,closed:0},
+      {id:'try',name:'Try&Buy',active:9,h1:10,color:'#8a94a6',goal:'Дать клиенту попробовать тариф и затем начать платить.',why:'Срок теста и переход на оплату контролируются вручную.',auto:'Автоматически включать тест, завершать его и переводить на оплату.',rev:1.298,content:208,closed:185}
     ];
     const activeSeries={
       'ППС manual':[1988,1968,2021,2035,1989,2005,2199],
-      'ППС auto':[1750,1771,1802,1824,1777,1819,1967],
+      'Авто ППС':[1750,1771,1802,1824,1777,1819,1967],
       'Лестница':[309,302,310,320,325,307,338],
       'Повышение цен ППС':[157,157,166,170,167,160,180],
       'Крым · спецоффер':[80,78,80,78,79,76,85],
@@ -300,14 +382,14 @@
       'LTR · спецоффер':[5,4,6,5,5,6,6]
     };
     const effects=[
-      ['Лестница',93.509,135537,'ladder'],['ППС manual',70.935,196379,'pps-manual'],['ППС auto',55.945,70663,'pps-auto'],['Повышение цен ППС',8.055,6579,'price'],['Спец.Оффер',7.235,10393,'special'],['Спец оффер КС',3.721,2988,'special-ks'],['Бонусы на продвижение',2.229,-860,'bonus-promo'],['Крым · спецоффер',1.413,3911,'crimea'],['Элитка',.706,57298,'elite'],['LTR · спецоффер',.006,241,'ltr'],['Try&Buy',-.010,197,'try'],['Поддержка регионов',-.172,8644,'regions'],['0+5',-.196,-228,'zero5'],['SUB по рублю',-.568,-3382,'sub-ruble']
+      ['Лестница',93.509,135537,'ladder'],['ППС manual',70.935,196379,'pps-manual'],['Авто ППС',55.945,70663,'pps-auto'],['Повышение цен ППС',8.055,6579,'price'],['Спец.Оффер',7.235,10393,'special'],['Спец оффер КС',3.721,2988,'special-ks'],['Бонусы на продвижение',2.229,-860,'bonus-promo'],['Крым · спецоффер',1.413,3911,'crimea'],['Элитка',.706,57298,'elite'],['LTR · спецоффер',.006,241,'ltr'],['Try&Buy',-.010,197,'try'],['Поддержка регионов',-.172,8644,'regions'],['0+5',-.196,-228,'zero5'],['SUB по рублю',-.568,-3382,'sub-ruble']
     ];
     const treeCopy={
-      all:{tag:'Весь тарифный контур',title:'6 481 активный тариф',text:'Все уникальные активные клиенты RRE SS&amp;Sub&amp;LTR на 30 июня.',a:'4 030 с акциями',b:'2 451 без акций',foot:'Уровень автоматизации считаем только внутри 4 030 клиентов с активными акциями.'},
-      'with-actions':{tag:'Клиенты с акциями',title:'4 030 клиентов с активными акциями',text:'У клиента есть хотя бы одна из механик реестра. Если одновременно несколько акций, клиент считается один раз.',a:'2 352 ручные',b:'1 678 Авто',foot:'Это новый знаменатель для долей и динамики: 4 030 уникальных клиентов, а не все 6 481 тарифа.'},
-      'without-actions':{tag:'Без активных акций',title:'2 451 клиент без активных акций',text:'У клиента есть активный тариф, но нет активной механики из реестра акций.',a:'37,82% тарифов',b:'не входят в расчёт',foot:'Эти клиенты остаются контекстом размера бизнеса, но не влияют на уровень автоматизации акций.'},
-      manual:{tag:'Ручные акции',title:'Ручные механики · 2 352',text:'У клиента есть хотя бы одна акция, которая требует ручной настройки или контроля. Если вместе с ней есть Auto ППС, клиент остаётся в ручной группе.',a:'58,36% с акциями',b:'−0,86 п.п. к январю',foot:'141 клиент одновременно имеет ручную и автоматическую механику; в итоговой доле такие клиенты считаются ручными.'},
-      automatic:{tag:'Автоматизированные акции',title:'Авто · 1 678',text:'Все активные акции клиента работают автоматически; ручных механик одновременно нет.',a:'41,64% с акциями',b:'+0,86 п.п. к январю',foot:'Это и есть уровень автоматизации акций на конец июня.'}
+      all:{tag:'Все клиенты',title:'6 481 клиент с тарифом',text:'Все клиенты RRE SS&amp;Sub&amp;LTR с активным тарифом на 30 июня.',al:'С акциями',a:'4 030',bl:'Без акций',b:'2 451',foot:'Долю Авто считаем только среди 4 030 клиентов с акциями.'},
+      'with-actions':{tag:'Клиенты с акциями',title:'4 030 клиентов с акциями',text:'Есть хотя бы одна активная акция. Если акций несколько, клиент здесь считается один раз.',al:'Ручные',a:'2 352',bl:'Авто',b:'1 678',foot:'Именно среди этих 4 030 клиентов считаем долю ручных и автоматических акций.'},
+      'without-actions':{tag:'Без акций',title:'2 451 клиент без акций',text:'Тариф активен, но ни одна акция не действует.',al:'Доля от всех',a:'37,82%',bl:'В доле Авто',b:'не участвуют',foot:'Эти клиенты нужны только для понимания общего размера базы.'},
+      manual:{tag:'Ручные акции',title:'2 352 клиента с ручными акциями',text:'Есть хотя бы одна акция, которую человек настраивает или проверяет вручную.',al:'Доля среди клиентов с акциями',a:'58,36%',bl:'Изменение с января',b:'−0,86 процентного пункта',foot:'Если у клиента одновременно есть ручная и автоматическая акция, он относится к ручной группе.'},
+      automatic:{tag:'Авто',title:'1 678 клиентов в Авто',text:'Все акции клиента работают сами, ручной проверки нет.',al:'Доля среди клиентов с акциями',a:'41,64%',bl:'Изменение с января',b:'+0,86 процентного пункта',foot:'Это доля Авто на конец июня.'}
     };
     const treeBranchActions={
       'with-actions':[
@@ -319,22 +401,22 @@
       automatic:[['pps-auto',1819]]
     };
     const ppsManualGroups=[
-      {name:'Только ППС manual',clients:1641,share:81.84,manualTariff:441,standardTariff:1200,tariffDetail:'<strong>Ручной — 441:</strong> продуктовые проблемы в Auto ППС или возврат клиента. Это нормальный контур исключений.<br><br><strong>Стандартный — 1 200:</strong> неоднородная очередь: 424 клиента имеют активную докупку, 279 были в Auto ППС, но их пришлось вывести в ручной контур, 597 можно готовить к переводу после проверки.',who:'Нет другой активной акции. ППС manual — основная ценовая механика клиента.',why:'Для 441 клиента сохраняем безопасный ручной сценарий. Стандартные 1 200 переводим разными маршрутами: сначала 597 готовых, докупщиков — после автоматизации докупки, клиентов, выведенных из Auto ППС в ручной контур, — после устранения причины возврата.'},
-      {name:'Рост и «Лестница»',clients:220,share:10.97,manualTariff:214,standardTariff:6,who:'ППС manual работает вместе с «Лестницей» и поэтапным ростом условий.',why:'Закрепить рост объёма, VAS-бюджета и выручки, когда две механики ещё нельзя применить одним автоматическим правилом.'},
-      {name:'Региональные условия',clients:73,share:3.64,manualTariff:24,standardTariff:49,who:'Крымский спецоффер или «Поддержка регионов» поверх ППС manual.',why:'Сохранить клиента и контент в регионах с отдельной экономикой предложения.'},
-      {name:'Временные и legacy-сценарии',clients:28,share:1.40,manualTariff:15,standardTariff:13,who:'SUB по рублю, Try&Buy или бонусы на продвижение.',why:'Дать временное условие, проконтролировать переход и затем вернуть клиента в стандартный сценарий.'},
+      {name:'Только ППС manual',clients:1641,share:81.84,manualTariff:441,standardTariff:1200,tariffDetail:'<strong>Ручной тариф — 441:</strong> Auto ППС не сработал или клиента вернули вручную.<br><br><strong>Стандартный тариф — 1 200:</strong> 597 готовы к Auto, 424 докупщика ждут новую ценовую политику, 279 ранее вывели из Auto.',who:'Других активных акций нет.',why:'441 оставляем как исключения. Из 1 200 сначала переводим 597 готовых; докупщиков и вернувшихся из Auto разбираем отдельно.'},
+      {name:'Рост и «Лестница»',clients:220,share:10.97,manualTariff:214,standardTariff:6,who:'ППС manual работает вместе с «Лестницей».',why:'Клиент постепенно увеличивает объявления и траты, но две акции пока нельзя настроить одним правилом.'},
+      {name:'Региональные условия',clients:73,share:3.64,manualTariff:24,standardTariff:49,who:'Крымский спецоффер или «Поддержка регионов» поверх ППС manual.',why:'Сохранить клиента и объявления в регионах с отдельными условиями.'},
+      {name:'Временные акции',clients:28,share:1.40,manualTariff:15,standardTariff:13,who:'SUB по рублю, Try&Buy или бонусы на продвижение.',why:'Дать временные условия и вовремя вернуть обычный тариф.'},
       {name:'Спецклиенты и сегменты',clients:22,share:1.10,manualTariff:18,standardTariff:4,who:'Спецоффер, «Элитка», LTR или спецоффер КС.',why:'Сохранить или развить стратегического клиента либо узкий сегмент, для которого массовое предложение не подходит.'},
-      {name:'Компенсация повышения цены',clients:21,share:1.05,manualTariff:21,standardTariff:0,who:'ППС manual применяется вместе с компенсацией индексации.',why:'Смягчить повышение цены и сохранить бюджет клиента.'}
+      {name:'Компенсация повышения цены',clients:21,share:1.05,manualTariff:21,standardTariff:0,who:'ППС manual работает вместе со скидкой при повышении цены.',why:'Смягчить повышение цены и сохранить клиента.'}
     ];
     const dokupMonthly=[
       ['Янв',327,1.01,3148,3.09],['Фев',328,3.60,7451,5.59],['Мар',370,6.09,11533,6.99],
       ['Апр',334,8.66,10309,7.34],['Май',335,4.84,7298,5.46],['Июн',323,4.66,5396,4.11]
     ];
     const standard1200=[
-      {name:'Готовы после проверки',clients:597,share:49.75,color:'#2f6fed',text:'Первая очередь миграции после проверки ограничений.'},
-      {name:'Ручная докупка',clients:322,share:26.83,color:'#ff7849',text:'Сначала автоматизировать докупку, затем переводить в Auto ППС.'},
+      {name:'Готовы после проверки',clients:597,share:49.75,color:'#2f6fed',text:'Первая очередь перевода в Auto ППС.'},
+      {name:'Ручная докупка',clients:322,share:26.83,color:'#ff7849',text:'Не переводить до новой ценовой политики.'},
       {name:'Были в Auto ППС, выведены в ручной — без докупки',clients:177,share:14.75,color:'#22b893',text:'Вернуть в Auto ППС после устранения причины ручного возврата.'},
-      {name:'Были в Auto ППС, выведены в ручной — с докупкой',clients:102,share:8.50,color:'#8b5cf6',text:'Вернуть в Auto ППС после устранения причины возврата и автоматизации докупки.'},
+      {name:'Были в Auto ППС, выведены в ручной — с докупкой',clients:102,share:8.50,color:'#8b5cf6',text:'Сначала устранить причину возврата и решить вопрос с ценой докупки.'},
       {name:'Уточнить',clients:2,share:0.17,color:'#98a2b3',text:'Точечно проверить статус.'}
     ];
 
@@ -343,40 +425,38 @@
     function renderActions(branch){
       const actions=treeBranchActions[branch];
       const box=document.querySelector('#treeActions');
-      if(!actions){box.innerHTML='<div class="tree-actions-head"><strong>Выберите ветку с акциями</strong><span>Здесь появятся конкретные активные механики</span></div>';return}
-      const label=branch==='manual'?'Ручные акции':branch==='automatic'?'Автоматизированные акции':'Все активные акции';
+      if(!actions){box.innerHTML='<div class="tree-actions-head"><strong>Выберите клиентов с акциями</strong><span>Ниже появится список акций</span></div>';return}
+      const label=branch==='manual'?'Ручные акции':branch==='automatic'?'Авто':'Все активные акции';
       const pct=value=>(100*value/4030).toLocaleString('ru-RU',{minimumFractionDigits:1,maximumFractionDigits:1})+'%';
-      box.innerHTML=`<div class="tree-actions-head"><strong>${label}</strong><span>клиент может участвовать в нескольких акциях</span></div><div class="tree-actions-table"><div class="action-header"><span>Акция</span><span>Клиенты</span><span>Доля клиентов с акциями</span><span>${branch==='automatic'?'Как работает':'Почему ещё не автоматизирована'}</span></div>${actions.map(([id,count])=>{const m=mechanics.find(x=>x.id===id);const reason=branch==='automatic'?m.auto:m.why;return `<button class="action-node" data-action="${id}" data-branch="${branch}" data-count="${count}"><strong>${m.name}</strong><span class="action-count">${fmt(count)}</span><span>${pct(count)}</span><span class="action-reason">${reason}</span></button>`}).join('')}</div>`;
+      box.innerHTML=`<div class="tree-actions-head"><strong>${label}</strong><span>один клиент может быть в нескольких акциях</span></div><div class="tree-actions-table"><div class="action-header"><span>Акция</span><span>Клиенты</span><span>Доля из 4 030</span><span>${branch==='automatic'?'Как работает':'Почему вручную'}</span></div>${actions.map(([id,count])=>{const m=mechanics.find(x=>x.id===id);const reason=branch==='automatic'?m.auto:m.why;return `<button class="action-node" data-action="${id}" data-branch="${branch}" data-count="${count}"><strong>${m.name}</strong><span class="action-count">${fmt(count)}</span><span>${pct(count)}</span><span class="action-reason">${reason}</span></button>`}).join('')}</div>`;
       box.querySelectorAll('.action-node').forEach(n=>n.onclick=()=>renderAction(n.dataset.branch,n.dataset.action,+n.dataset.count));
     }
     function renderPpsManualBreakdown(){
       const box=document.querySelector('#treeActions');
-      box.insertAdjacentHTML('beforeend',`<div class="pps-breakdown" id="ppsManualBreakdown"><div class="pps-breakdown-head"><div><h4>Кто находится в ППС manual и зачем</h4><p>2 005 уникальных клиентов на 30 июня разложены на непересекающиеся бизнес-группы.</p></div><span class="pill">100% ППС manual</span></div><div class="pps-table-wrap"><table class="pps-table"><thead><tr><th>Группа клиентов</th><th class="num">Клиенты</th><th class="num">Доля ППС manual</th><th>Тариф и следующий шаг</th><th>Кто входит</th><th>Зачем нужен ручной сценарий</th></tr></thead><tbody>${ppsManualGroups.map(g=>`<tr><td><strong>${g.name}</strong></td><td class="num"><strong>${fmt(g.clients)}</strong></td><td class="num">${g.share.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2})}%</td><td class="tariff-split">${g.tariffDetail||`ручной ${fmt(g.manualTariff)}<br>стандартный ${fmt(g.standardTariff)}`}</td><td>${g.who}</td><td>${g.why}</td></tr>`).join('')}</tbody></table></div>${renderStandard1200()}<div class="pps-breakdown-note">Если у клиента несколько акций, он попадает в одну строку по главной бизнес-причине. В основной группе 441 клиент остаётся в ручном контуре после проблем Auto ППС или возврата. Стандартные 1 200 — не единая очередь: 424 клиента имеют активную докупку, а 279 были в Auto ППС, но их пришлось вывести в ручной контур.</div>${renderDokupEffect()}</div>`);
+      box.insertAdjacentHTML('beforeend',`<div class="pps-breakdown" id="ppsManualBreakdown"><div class="pps-breakdown-head"><div><h4>Кто находится в ППС manual</h4><p>2 005 клиентов на 30 июня. Каждый клиент в таблице относится только к одной главной причине.</p></div><span class="pill">все клиенты ППС manual</span></div><div class="pps-table-wrap"><table class="pps-table"><thead><tr><th>Группа</th><th class="num">Клиенты</th><th class="num">Доля от ППС manual</th><th>Тариф и решение</th><th>Что ещё действует</th><th>Зачем оставляем вручную</th></tr></thead><tbody>${ppsManualGroups.map(g=>`<tr><td><strong>${g.name}</strong></td><td class="num"><strong>${fmt(g.clients)}</strong></td><td class="num">${g.share.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2})}%</td><td class="tariff-split">${g.tariffDetail||`ручной ${fmt(g.manualTariff)}<br>стандартный ${fmt(g.standardTariff)}`}</td><td>${g.who}</td><td>${g.why}</td></tr>`).join('')}</tbody></table></div>${renderStandard1200()}<div class="pps-breakdown-note">Коротко: 441 клиент остаётся вручную из-за проблем Auto ППС или возврата. Среди 1 200 стандартных клиентов: 597 готовы к Auto; 322 докупают вручную; 177 вернулись из Auto без докупки; 102 вернулись из Auto и докупают; 2 нужно проверить.</div></div>`);
     }
     function renderStandard1200(){
-      return `<section class="standard-breakdown"><div class="standard-head"><div><h4>Что внутри 1 200 стандартных тарифов</h4><p>Только клиенты с единственной активной механикой «ППС manual» на 30 июня. Группы не пересекаются и в сумме дают 1 200. Отдельно выделены клиенты, которые были в Auto ППС, но затем были выведены в ручной контур.</p></div><div class="standard-total"><strong>1 200</strong><span>100% группы</span></div></div><div class="standard-bar" aria-label="Состав стандартных тарифов">${standard1200.map(x=>`<span style="width:${x.share}%;background:${x.color}" title="${x.name}: ${fmt(x.clients)}"></span>`).join('')}</div><div class="standard-grid">${standard1200.map(x=>`<article class="standard-item"><i style="background:${x.color}"></i><strong>${fmt(x.clients)}</strong><b>${x.name} · ${x.share.toLocaleString('ru-RU')}%</b><p>${x.text}</p></article>`).join('')}</div><div class="standard-summary"><span>424 докупщика · 35,33%</span><span>597 — первая очередь после проверки</span><span>279 — были в Auto ППС, выведены в ручной</span></div></section>`;
-    }
-    function renderDokupEffect(){
-      return `<section class="dokup-effect"><div class="dokup-head"><div><h4>Ручные докупщики: эффект H1</h4><p>Стандартный тариф + активный «ППС manual» + клиент не относится к группе «были в Auto ППС, выведены в ручной» + докупка активна на конец месяца. Это тот ручной контур, где на конец июня находится около 300 клиентов.</p></div><span class="dokup-badge">323 активных · 30 июня</span></div><div class="dokup-kpis"><article class="dokup-kpi"><span>Масштаб</span><strong>566</strong><small>уникальных клиентов за H1; 323 активны на конец июня</small></article><article class="dokup-kpi"><span>Прирост выручки</span><strong>+28,86 млн ₽</strong><small>+19,0% к результату похожих клиентов; фактическая выручка группы 186,18 млн ₽</small></article><article class="dokup-kpi"><span>Прирост контента</span><strong>+45 135</strong><small>активных объявлений — сумма месячных приростов; +26,4% к ожидаемому уровню</small></article><article class="dokup-kpi"><span>Доля у этих клиентов</span><strong>+5,67 п.п.</strong><small>Avito против уникального контента Cian и Домклик у тех же продавцов</small></article></div><div class="dokup-callout"><div><strong>+46 469 дополнительных мест в тарифе.</strong> Около 97% этого прироста проявилось в дополнительном контенте.</div><div><strong>+0,218 п.п. к доле всего рынка SS&amp;Sub.</strong> Это вклад прироста контента ручных докупщиков в общий объём Avito + уникальный контент конкурентов.</div></div><div class="dokup-table-wrap"><table class="dokup-table"><thead><tr><th>Месяц</th><th>Активные ручные докупщики</th><th>Прирост выручки</th><th>Прирост контента</th><th>Прирост доли у этих клиентов</th></tr></thead><tbody>${dokupMonthly.map(r=>`<tr><td><strong>${r[0]}</strong></td><td>${fmt(r[1])}</td><td class="dokup-positive">+${r[2].toLocaleString('ru-RU',{minimumFractionDigits:2})} млн ₽</td><td class="dokup-positive">+${fmt(r[3])}</td><td class="dokup-positive">+${r[4].toLocaleString('ru-RU',{minimumFractionDigits:2})} п.п.</td></tr>`).join('')}</tbody></table></div><div class="dokup-method"><strong>Как посчитано.</strong> Каждый месяц докупщика сравниваем с клиентами из той же команды, сегмента и региона, на близком тарифе и с похожей динамикой выручки и контента за три предыдущих месяца. Подобрались аналоги для 94,5% наблюдений. Положительный результат есть во всех шести месяцах. Диапазон оценки: выручка <span class="range">+18,77…+40,39 млн ₽</span>, контент <span class="range">+25,8…+70,7 тыс.</span>, доля у этих клиентов <span class="range">+3,45…+8,29 п.п.</span>. Это скорректированная наблюдаемая оценка, а не результат случайного эксперимента.</div></section>`;
+      return `<section class="standard-breakdown"><div class="standard-head"><div><h4>Что внутри 1 200 стандартных клиентов</h4><p>Здесь только клиенты, у которых из акций действует один ППС manual. Пять групп ниже не пересекаются.</p></div><div class="standard-total"><strong>1 200</strong><span>всего</span></div></div><div class="standard-bar" aria-label="Состав стандартных тарифов">${standard1200.map(x=>`<span style="width:${x.share}%;background:${x.color}" title="${x.name}: ${fmt(x.clients)}"></span>`).join('')}</div><div class="standard-grid">${standard1200.map(x=>`<article class="standard-item"><i style="background:${x.color}"></i><strong>${fmt(x.clients)}</strong><b>${x.name} · ${x.share.toLocaleString('ru-RU')}%</b><p>${x.text}</p></article>`).join('')}</div><div class="standard-summary"><span>597 готовы</span><span>322 докупают</span><span>177 вернулись без докупки</span><span>102 вернулись и докупают</span><span>2 проверить</span></div></section>`;
     }
     function renderAction(branch,id,count){
       document.querySelectorAll('.action-node').forEach(n=>n.classList.toggle('active',n.dataset.action===id));
       document.querySelector('#ppsManualBreakdown')?.remove();
-      const m=mechanics.find(x=>x.id===id);const branchLabel=branch==='automatic'?'в автоматизированной части портфеля':'среди клиентов с активными акциями';
-      const fx=effects.find(x=>x[3]===id);const effect=!fx?'отдельная оценка пока не рассчитана':`${fx[1]>=0?'+':''}${fx[1].toLocaleString('ru-RU')} млн ₽ общей выручки · ${fx[2]>=0?'+':''}${fmt(fx[2])} тарифного объёма за H1`;
-      document.querySelector('#treeDetail').innerHTML=`<div><span class="d-tag">Акция · ${branchLabel}</span><h3>${m.name} · ${fmt(count)}</h3><p>${fmt(count)} активных клиентов на 30 июня — ${(100*count/4030).toLocaleString('ru-RU',{minimumFractionDigits:1,maximumFractionDigits:1})}% всех клиентов с акциями. Один клиент может участвовать сразу в нескольких механиках.</p><div class="detail-block"><strong>Зачем бизнесу</strong><p>${m.goal}</p></div><div class="detail-block"><strong>${branch==='automatic'?'Как работает':'Почему ручная операция'}</strong><p>${branch==='automatic'?m.auto:m.why}</p></div>${branch==='automatic'?'':`<div class="detail-block"><strong>Как автоматизировать</strong><p>${m.auto}</p></div>`}</div><div class="detail-foot">Эффект механики: ${effect}. Эффекты пересекающихся акций не складываются напрямую.</div>`;
+      const m=mechanics.find(x=>x.id===id);const branchLabel=branch==='automatic'?'Авто':'ручная акция';
+      const fx=effects.find(x=>x[3]===id);const effect=!fx?'пока не посчитана отдельно':`${fx[1]>=0?'+':''}${fx[1].toLocaleString('ru-RU')} млн ₽ выручки · ${fx[2]>=0?'+':''}${fmt(fx[2])} объявлений за H1`;
+      document.querySelector('#treeDetail').innerHTML=`<div><span class="d-tag">${branchLabel}</span><h3>${m.name} · ${fmt(count)}</h3><p>${fmt(count)} клиентов на 30 июня — ${(100*count/4030).toLocaleString('ru-RU',{minimumFractionDigits:1,maximumFractionDigits:1})}% из 4 030 клиентов с акциями.</p><div class="detail-block"><strong>Зачем нужна</strong><p>${m.goal}</p></div><div class="detail-block"><strong>${branch==='automatic'?'Как работает':'Почему вручную'}</strong><p>${branch==='automatic'?m.auto:m.why}</p></div>${branch==='automatic'?'':`<div class="detail-block"><strong>Что нужно для Авто</strong><p>${m.auto}</p></div>`}</div><div class="detail-foot">Оценка результата: ${effect}. Результаты отдельных акций нельзя просто складывать: один клиент может участвовать в нескольких.</div>`;
       if(id==='pps-manual')renderPpsManualBreakdown();
     }
-    function renderTree(id='all'){document.querySelectorAll('.node').forEach(n=>n.classList.toggle('active',n.dataset.node===id));const d=treeCopy[id];document.querySelector('#treeDetail').innerHTML=`<div><span class="d-tag">${d.tag}</span><h3>${d.title}</h3><p>${d.text}</p><div class="detail-grid"><div class="detail-stat"><span>Масштаб</span><strong>${d.a}</strong></div><div class="detail-stat"><span>Контекст</span><strong>${d.b}</strong></div></div></div><div class="detail-foot">${d.foot}</div>`;renderActions(id)}
+    function renderTree(id='all'){document.querySelectorAll('.node').forEach(n=>n.classList.toggle('active',n.dataset.node===id));const d=treeCopy[id];document.querySelector('#treeDetail').innerHTML=`<div><span class="d-tag">${d.tag}</span><h3>${d.title}</h3><p>${d.text}</p><div class="detail-grid"><div class="detail-stat"><span>${d.al}</span><strong>${d.a}</strong></div><div class="detail-stat"><span>${d.bl}</span><strong>${d.b}</strong></div></div></div><div class="detail-foot">${d.foot}</div>`;renderActions(id)}
     document.querySelectorAll('.node').forEach(n=>n.onclick=()=>renderTree(n.dataset.node));renderTree();
-    const drawer=document.querySelector('#drawerBack');function openDrawer(id){const m=mechanics.find(x=>x.id===id)||mechanics.find(x=>x.name===id);if(!m)return;const fx=effects.find(x=>x[3]===m.id),rev=fx?fx[1]:m.rev,volume=fx?fx[2]:m.content;document.querySelector('#drawerContent').innerHTML=`<span class="pill">RRE SS&amp;Sub&amp;LTR · H1</span><h2>${m.name}</h2><p style="color:var(--muted)">${m.active} активных клиентов на 30 июня.</p><div class="drawer-kpis"><div class="drawer-kpi"><span>Прирост общей выручки H1</span><strong>${rev>=0?'+':''}${rev.toLocaleString('ru-RU')} млн ₽</strong></div><div class="drawer-kpi"><span>Прирост тарифного объёма H1</span><strong>${volume>=0?'+':''}${fmt(volume)}</strong></div></div><div class="drawer-block"><h4>Зачем бизнесу</h4><p>${m.goal}</p></div><div class="drawer-block"><h4>Почему возникает ручник</h4><p>${m.why}</p></div><div class="drawer-block"><h4>Как автоматизировать</h4><p>${m.auto}</p></div><div class="drawer-block"><h4>Как посчитан эффект</h4><p>Для каждого месяца сравниваем общие клиентские траты из dma.report_asd_motivation с результатом похожих клиентов без этой акции. Продления и старые подключения включены.</p></div>`;drawer.classList.add('open')}
+    document.querySelector('#ppsShortcut').onclick=()=>{renderTree('manual');renderAction('manual','pps-manual',2005);document.querySelector('#ppsManualBreakdown')?.scrollIntoView({behavior:'smooth',block:'start'})};
+    const drawer=document.querySelector('#drawerBack');function openDrawer(id){const m=mechanics.find(x=>x.id===id)||mechanics.find(x=>x.name===id);if(!m)return;const fx=effects.find(x=>x[3]===m.id),rev=fx?fx[1]:m.rev,volume=fx?fx[2]:m.content;document.querySelector('#drawerContent').innerHTML=`<span class="pill">Оценка за H1</span><h2>${m.name}</h2><p style="color:var(--muted)">${m.active} клиентов на 30 июня.</p><div class="drawer-kpis"><div class="drawer-kpi"><span>Дополнительная выручка</span><strong>${rev>=0?'+':''}${rev.toLocaleString('ru-RU')} млн ₽</strong></div><div class="drawer-kpi"><span>Дополнительные объявления</span><strong>${volume>=0?'+':''}${fmt(volume)}</strong></div></div><div class="drawer-block"><h4>Зачем нужна</h4><p>${m.goal}</p></div><div class="drawer-block"><h4>Почему вручную</h4><p>${m.why}</p></div><div class="drawer-block"><h4>Что нужно для Авто</h4><p>${m.auto}</p></div><div class="drawer-block"><h4>Как считали</h4><p>Сравнили клиентов с акцией с похожими клиентами без неё в тех же месяцах. Учли продления и акции, начавшиеся до 2026 года.</p></div>`;drawer.classList.add('open')}
     document.querySelector('#drawerClose').onclick=()=>drawer.classList.remove('open');drawer.onclick=e=>{if(e.target===drawer)drawer.classList.remove('open')};
     document.querySelector('#stackList').innerHTML=months.map(x=>`<div class="stack-row"><strong>${x.m}</strong><div class="bar" title="${fmt(x.withActions)} клиентов с акциями: ручные ${fmt(x.manual)} · Авто ${fmt(x.auto)}"><span class="manual" style="width:${100-x.autoShare}%"></span><span class="auto" style="width:${x.autoShare}%"></span></div><span class="row-val">${x.autoShare.toLocaleString('ru-RU')}% Авто</span></div>`).join('');
     const xs=[55,150,245,340,435,530],ys=months.map(m=>185-(m.autoShare-40)*70),linePath=months.map((m,i)=>`${i?'L':'M'}${xs[i]} ${ys[i]}`).join(' ');document.querySelector('#shareLine').setAttribute('d',linePath);document.querySelector('#shareArea').setAttribute('d',`${linePath} L530 230 L55 230 Z`);document.querySelector('#sharePoints').innerHTML=months.map((m,i)=>`<circle class="point" cx="${xs[i]}" cy="${ys[i]}" r="5" data-tip="${m.m}: ${m.autoShare.toLocaleString('ru-RU')}% Авто · ${fmt(m.auto)} из ${fmt(m.withActions)} клиентов с акциями"/>`).join('');document.querySelector('#monthLabels').innerHTML=months.map((m,i)=>`<text class="axistext" x="${xs[i]-12}" y="255">${m.m}</text>`).join('');
     document.querySelector('#heatBody').innerHTML=Object.entries(activeSeries).map(([name,v])=>`<tr><td>${name}</td>${v.slice(0,6).map((n,i)=>`<td class="${n===Math.max(...v.slice(0,6))?'hot':''}">${fmt(n)}</td>`).join('')}<td><strong>${fmt(v[6])}</strong></td></tr>`).join('');
     const maxRev=Math.max(...months.map(x=>x.revenue));document.querySelector('#revenueStrip').innerHTML=months.map(x=>`<article class="rev" style="--h:${Math.round(x.revenue/maxRev*70)}%"><span>${x.m}</span><strong>${x.revenue.toLocaleString('ru-RU')} млн ₽</strong></article>`).join('');
     const maxEffect=Math.max(...effects.map(x=>Math.abs(x[1])));document.querySelector('#effectList').innerHTML=effects.map(x=>`<div class="effect-row" data-effect="${x[3]}"><span class="effect-name">${x[0]}</span><div class="effect-track"><div class="effect-fill ${x[1]<0?'neg':''}" style="--w:${Math.max(2,Math.abs(x[1])/maxEffect*100)}%"></div></div><span class="money" style="color:${x[1]<0?'var(--red)':'#087c61'}">${x[1]>=0?'+':''}${x[1].toLocaleString('ru-RU')} млн ₽</span><span class="content">${x[2]>=0?'+':''}${fmt(x[2])}</span></div>`).join('');
-    document.querySelectorAll('[data-effect]').forEach(x=>{x.onclick=()=>{const map={'zero-one':{id:'zero-one',name:'0+1',active:0,h1:768,goal:'Привлечь дополнительный контент и активировать клиента через период бесплатного размещения.',why:'Бесплатный контент завышает 90-дневную базу Auto ППС после выхода.',auto:'Маркировать происхождение контента и автоматически снимать временный ручник.',rev:2.37,content:812,closed:761},bonus:{id:'bonus',name:'Повышение цен Бонусы 2.2',active:0,h1:51,goal:'Снизить сопротивление росту цены бонусной ценностью.',why:'Размер и момент бонуса завязаны на конкретный кейс повышения.',auto:'Матрица бонуса от индексации и сегмента.',rev:1.634,content:-147,closed:51},try:{id:'try',name:'Try&Buy',active:9,h1:188,goal:'Снизить барьер входа и конвертировать тест в платный бюджет.',why:'Срок теста и переход в платный тариф управляются вручную.',auto:'Автоматический eligibility, срок пилота и конверсия.',rev:1.298,content:208,closed:185}};if(map[x.dataset.effect])mechanics.push(map[x.dataset.effect]);openDrawer(x.dataset.effect)}});
+    document.querySelectorAll('[data-effect]').forEach(x=>{x.onclick=()=>{const map={'zero-one':{id:'zero-one',name:'0+1',active:0,h1:768,goal:'Дать клиенту попробовать размещение бесплатно, а затем перевести на оплату.',why:'После бесплатного периода система может неверно рассчитать будущие условия.',auto:'Помнить, какие объявления были бесплатными, и вовремя возвращать обычные условия.',rev:2.37,content:812,closed:761},bonus:{id:'bonus',name:'Повышение цен Бонусы 2.2',active:0,h1:51,goal:'Смягчить повышение цены полезным бонусом.',why:'Размер и дата бонуса пока выбираются отдельно для каждого клиента.',auto:'Выбирать бонус по размеру повышения цены и типу клиента.',rev:1.634,content:-147,closed:51},try:{id:'try',name:'Try&Buy',active:9,h1:188,goal:'Дать клиенту попробовать тариф и затем перейти на оплату.',why:'Срок теста и переход на оплату пока контролирует человек.',auto:'Система сама определяет участников, завершает тест и включает оплату.',rev:1.298,content:208,closed:185}};if(map[x.dataset.effect]&&!mechanics.some(m=>m.id===x.dataset.effect))mechanics.push(map[x.dataset.effect]);openDrawer(x.dataset.effect)}});
     const tooltip=document.querySelector('#tooltip');document.addEventListener('pointerover',e=>{const t=e.target.closest('[data-tip]');if(!t)return;tooltip.textContent=t.dataset.tip;tooltip.style.left=e.clientX+'px';tooltip.style.top=e.clientY+'px';tooltip.style.opacity=1});document.addEventListener('pointerout',e=>{if(e.target.closest('[data-tip]'))tooltip.style.opacity=0});
     document.querySelectorAll('.count').forEach(el=>{const target=+el.dataset.value,start=performance.now(),dur=950;const tick=now=>{const p=Math.min(1,(now-start)/dur),v=Math.round(target*(1-Math.pow(1-p,3)));el.textContent=fmt(v);if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)});
     const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));function reveal(){document.querySelectorAll('.tab.active .reveal').forEach(x=>x.classList.add('visible'))}reveal();
